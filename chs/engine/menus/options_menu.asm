@@ -7,7 +7,7 @@
 	next "声音"
 	next "菜单说明"
 	next "窗口"
-	next "v121@"
+	next "v122@"
 
 ; The CHS patch bytes after the end of this entry
 	db "4"

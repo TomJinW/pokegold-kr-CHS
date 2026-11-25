@@ -1,11 +1,11 @@
 # 韩版《宝可梦 金／银》简体中文
 
-本分支使用 master 原版 ROM 作为链接底图，构建与已发布的汉化版逐字节一致的 ROM。
+本分支使用 master 原版 ROM 作为链接底图构建汉化版。当前为 v1.2.2：在 v1.2.1 基础上修正事件标记钩子。
 
 ```sh
-make -j8          # v1.2.1：pokegold-krchs.gbc、pokesilver-krchs.gbc
+make -j8          # v1.2.2：pokegold-krchs.gbc、pokesilver-krchs.gbc
 make chs-oldfont  # 同上，改用旧字库：pokegold-krchs-oldfont.gbc、pokesilver-krchs-oldfont.gbc
-make compare      # 构建并校验 v1.2.1
+make compare      # 构建并校验 v1.2.2 的散列
 make original     # 仅构建韩文原版 pokegold.gbc、pokesilver.gbc
 make compare-original
 ```

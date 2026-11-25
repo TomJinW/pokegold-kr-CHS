@@ -2,7 +2,7 @@
 """Verify the original base ROMs, or the CHS builds against the known release hashes.
 
   verify_chs.py --base gold|silver     original ROM (SHA-1), before linking
-  verify_chs.py [--release v121]       every CHS ROM that exists (SHA-256)
+  verify_chs.py [--release v122]       every CHS ROM that exists (SHA-256)
 """
 import argparse
 import hashlib
@@ -10,7 +10,7 @@ import json
 from pathlib import Path
 
 # release -> output file name
-OUTPUTS = {"v121": "poke{version}-krchs.gbc"}
+OUTPUTS = {"v122": "poke{version}-krchs.gbc"}
 
 
 def check(filename, size, algorithm, expected):

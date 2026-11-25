@@ -1,14 +1,25 @@
 # 韩版金／银简体中文汉化源码
 
 `chs/` 是韩版金／银简体中文汉化的源码。它的目录、文件名、标签和宏写法都与原工程相同，
-内容换成了中文。默认构建与发布的 v1.2.1 汉化 ROM 逐字节一致。
+内容换成了中文。当前版本为 v1.2.2。
+
+| 版本 | 与上一版的差别 |
+| --- | --- |
+| v1.2.0 | 首个还原的版本（与发布的 ROM 逐字节一致） |
+| v1.2.1 | 重绘字库（旧字库保留为 `_CHS_OLDFONT` 选项）；版本号（与发布的 ROM 逐字节一致） |
+| v1.2.2 | 事件标记钩子只设置本标记、不再清除 800–805、807 号标记；版本号 |
+
+发布版散列（SHA-256，金／银）：
+- v1.2.0：`0a9d04ed…81c5d4`／`2ea580c2…c710d`
+- v1.2.1：`6ad123e24ea69604747e61f44208e6aefc869778d2ff2e99b2ae14cce82d363d`／`901883d25ac5aaec9a7e6591d49316e1436a775949079b36aa4caa362028031f`
+- v1.2.2：见 `chs/manifest.json`
 
 ## 构建
 
 ```sh
-make -j8            # pokegold-krchs.gbc、pokesilver-krchs.gbc（v1.2.1）
+make -j8            # pokegold-krchs.gbc、pokesilver-krchs.gbc（v1.2.2）
 make chs-oldfont    # pokegold-krchs-oldfont.gbc、pokesilver-krchs-oldfont.gbc（旧字库）
-make compare        # 构建并按 chs/manifest.json 校验 v1.2.1 的 SHA-256
+make compare        # 构建并按 chs/manifest.json 校验当前版本的 SHA-256
 make original       # 只构建 master 原版 pokegold.gbc、pokesilver.gbc
 make compare-original
 make clean
@@ -53,7 +64,7 @@ chs/
   main.asm            入口
   macros.asm          chs_at 等定位宏
   charmap.asm         CHS 码表
-  manifest.json       原版 SHA-1 与 v1.2.1 的 SHA-256
+  manifest.json       原版 SHA-1 与当前版本的 SHA-256
   data/ engine/ home/ maps/ gfx/   与原工程同路径的文件
 ```
 
@@ -104,7 +115,7 @@ chs/
 都已写成指令，并注明用途：
 
 - 两个事件标记钩子（`engine/menus/save.asm`、`engine/pokemon/mail.asm`）：
-  读档和开新档时设置 `EVENT_TRIED_LINK_SESSION_WITH_GEN_1`（整字节写入，同时清除 800–805、807 号标记）；
+  读档和开新档时设置 `EVENT_TRIED_LINK_SESSION_WITH_GEN_1`（v1.2.1 及以前整字节写入，同时清除 800–805、807 号标记；v1.2.2 已修正）；
 - 修正原版 bug：精灵球状态加成、月亮球、甜甜球、速度球、高 HP 血条动画、名人堂“HOF Master”称号；
 - 奖状：解压后额外载入 12 个中文图块（`engine/events/diploma.asm`）；
 - TM/HM 前缀长度、各种被移动字符串的地址；
