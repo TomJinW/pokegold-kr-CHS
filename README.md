@@ -1,5 +1,9 @@
 # 韩版《宝可梦 金／银》简体中文
 
+此汉化版为韩版汉化，美版大字体汉化请见[https://github.com/TomJinW/pokegoldCHS](https://github.com/TomJinW/pokegoldCHS)
+
+关于此汉化其他信息，以及v1.2.1等旧版本信息请参考[https://github.com/TomJinW/PKMN_GSCHS](https://github.com/TomJinW/PKMN_GSCHS)
+
 本分支使用 master 原版 ROM 作为链接底图构建汉化版。当前为 v1.2.2：在 v1.2.1 基础上修正事件标记钩子。
 
 ```sh
