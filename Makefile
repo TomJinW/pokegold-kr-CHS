@@ -74,9 +74,12 @@ RGBGFXFLAGS  ?= -Weverything
 	compare \
 	tools
 
-all: $(roms)
-gold:         pokegold.gbc
-silver:       pokesilver.gbc
+all: chs
+gold:         pokegold-krchs.gbc
+silver:       pokesilver-krchs.gbc
+original: $(roms)
+chs: pokegold-krchs.gbc pokesilver-krchs.gbc
+chs-oldfont: pokegold-krchs-oldfont.gbc pokesilver-krchs-oldfont.gbc
 gold_vc:      pokegold.patch
 silver_vc:    pokesilver.patch
 
@@ -90,6 +93,15 @@ clean: tidy
 	     -delete
 
 tidy:
+	$(RM) pokegold-krchs.gbc pokesilver-krchs.gbc \
+	      pokegold-krchs.sym pokesilver-krchs.sym \
+	      pokegold-krchs.map pokesilver-krchs.map \
+	      pokegold-krchs-oldfont.gbc pokesilver-krchs-oldfont.gbc \
+	      pokegold-krchs-oldfont.sym pokesilver-krchs-oldfont.sym \
+	      pokegold-krchs-oldfont.map pokesilver-krchs-oldfont.map \
+	      chs/gold.o chs/silver.o chs/gold_oldfont.o chs/silver_oldfont.o \
+	      $(shell find chs/gfx -name '*.1bpp' -o -name '*.2bpp' 2>/dev/null) \
+	      chs/build/*.syms
 	$(RM) $(roms) \
 	      $(roms:.gbc=.sym) \
 	      $(roms:.gbc=.map) \
@@ -105,8 +117,11 @@ tidy:
 	      rgbdscheck.o
 	$(MAKE) clean -C tools/
 
-compare: $(roms)
+compare-original: $(roms)
 	@$(SHA1) -c roms.sha1
+
+compare: chs
+	python3 tools/verify_chs.py
 
 tools:
 	$(MAKE) -C tools/
@@ -366,3 +381,44 @@ gfx/sgb/silver_border.sgb.tilemap: gfx/sgb/silver_border.bin ; tr < $< -d '\000'
 %.bin: ;
 %.blk: ;
 %.rle: ;
+
+
+### CHS (Simplified Chinese) overlay
+# The original sources above build the master ROMs in place. The overlay in
+# chs/ mirrors the original source layout; each of its sections is placed at
+# an original label (chs_at), so rgblink -O keeps every byte it does not write.
+# `make` builds *-krchs.gbc (release v1.2.1); `make chs-oldfont` builds the
+# same with the older two-byte font (*-krchs-oldfont.gbc).
+.PHONY: original chs chs-oldfont compare-original
+chs/gfx/font/hangul/%.1bpp: tools/gfx += --interleave --png=$<
+chs/gfx/font/hangul_old/%.1bpp: tools/gfx += --interleave --png=$<
+# The patch's own LZ data is a source file; never regenerate it.
+chs/gfx/%.chs.2bpp.lz: ;
+
+# Graphics flags of the original files, for their CHS copies.
+chs/gfx/mystery_gift/mystery_gift.2bpp: tools/gfx += --trim-whitespace
+chs/gfx/trainer_card/leaders.2bpp: tools/gfx += --trim-whitespace
+chs/gfx/error_screen/error_screen.2bpp: tools/gfx += --trim-whitespace
+# The patch blanked the last tiles, so trim exactly the two padding tiles instead.
+chs/gfx/font/font_naming_screen.2bpp: RGBGFXFLAGS += --trim-end 2
+chs_sources := $(shell find chs -type f -name '*.asm')
+# Everything chs/main.asm includes (sources, graphics, generated symbols)
+chs_deps := $(filter-out chs/build/%,$(shell tools/scan_includes chs/main.asm))
+
+chs/build/%.syms: poke%.gbc tools/chs_symbols.py $(chs_sources)
+	python3 tools/chs_symbols.py $* $@
+
+# chs/<version>_oldfont.o uses the older font.
+define CHS_ROM
+chs/$1$2.o: chs/main.asm $$(chs_deps) chs/build/$1.syms $$(preinclude_deps) | rgbdscheck.o
+	$$(RGBASM) -Weverything -Wtruncation=1 -D _$3 $4 -o $$@ $$<
+
+poke$1-krchs$5.gbc: chs/$1$2.o poke$1.gbc tools/verify_chs.py chs/manifest.json
+	python3 tools/verify_chs.py --base $1
+	$$(RGBLINK) $$(RGBLINKFLAGS) -O poke$1.gbc -n poke$1-krchs$5.sym -m poke$1-krchs$5.map -o $$@ $$<
+	$$(RGBFIX) -v $$@
+endef
+$(eval $(call CHS_ROM,gold,,GOLD,,))
+$(eval $(call CHS_ROM,silver,,SILVER,,))
+$(eval $(call CHS_ROM,gold,_oldfont,GOLD,-D _CHS_OLDFONT,-oldfont))
+$(eval $(call CHS_ROM,silver,_oldfont,SILVER,-D _CHS_OLDFONT,-oldfont))

@@ -1,0 +1,16 @@
+{
+  "gold": {
+    "base_sha1": "c0ff3999e1093e1af59ef3eea3f1bfd7c1f18a65",
+    "size": 2097152,
+    "targets": {
+      "v121": "6ad123e24ea69604747e61f44208e6aefc869778d2ff2e99b2ae14cce82d363d"
+    }
+  },
+  "silver": {
+    "base_sha1": "cb22d7e03a74dc3a563fde6be8626626b2b392e7",
+    "size": 2097152,
+    "targets": {
+      "v121": "901883d25ac5aaec9a7e6591d49316e1436a775949079b36aa4caa362028031f"
+    }
+  }
+}

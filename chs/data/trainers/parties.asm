@@ -1,0 +1,3101 @@
+; CHS: data/trainers/parties.asm
+
+	chs_at FalknerGroup
+	; FALKNER (1)
+	db "阿速@", TRAINERTYPE_MOVES
+	db  7, PIDGEY,     TACKLE, MUD_SLAP, NO_MOVE, NO_MOVE
+	db  9, PIDGEOTTO,  TACKLE, MUD_SLAP, GUST, NO_MOVE
+	db -1 ; end
+
+
+WhitneyGroup:
+	; WHITNEY (1)
+	db "小茜@", TRAINERTYPE_MOVES
+	db 18, CLEFAIRY,   DOUBLESLAP, MIMIC, ENCORE, METRONOME
+	db 20, MILTANK,    ROLLOUT, ATTRACT, STOMP, MILK_DRINK
+	db -1 ; end
+
+
+BugsyGroup:
+	; BUGSY (1)
+	db "阿笔@", TRAINERTYPE_MOVES
+	db 14, METAPOD,    TACKLE, STRING_SHOT, HARDEN, NO_MOVE
+	db 14, KAKUNA,     POISON_STING, STRING_SHOT, HARDEN, NO_MOVE
+	db 16, SCYTHER,    QUICK_ATTACK, LEER, FURY_CUTTER, NO_MOVE
+	db -1 ; end
+
+
+MortyGroup:
+	; MORTY (1)
+	db "松叶@", TRAINERTYPE_MOVES
+	db 21, GASTLY,     LICK, SPITE, MEAN_LOOK, CURSE
+	db 21, HAUNTER,    HYPNOSIS, MIMIC, CURSE, NIGHT_SHADE
+	db 25, GENGAR,     HYPNOSIS, SHADOW_BALL, MEAN_LOOK, DREAM_EATER
+	db 23, HAUNTER,    SPITE, MEAN_LOOK, MIMIC, NIGHT_SHADE
+	db -1 ; end
+
+
+PryceGroup:
+	; PRYCE (1)
+	db "柳伯@", TRAINERTYPE_MOVES
+	db 27, SEEL,       HEADBUTT, ICY_WIND, AURORA_BEAM, REST
+	db 29, DEWGONG,    HEADBUTT, ICY_WIND, AURORA_BEAM, REST
+	db 31, PILOSWINE,  ICY_WIND, FURY_ATTACK, MIST, BLIZZARD
+	db -1 ; end
+
+
+JasmineGroup:
+	; JASMINE (1)
+	db "阿蜜@", TRAINERTYPE_MOVES
+	db 30, MAGNEMITE,  THUNDERBOLT, SUPERSONIC, SONICBOOM, THUNDER_WAVE
+	db 30, MAGNEMITE,  THUNDERBOLT, SUPERSONIC, SONICBOOM, THUNDER_WAVE
+	db 35, STEELIX,    SCREECH, SUNNY_DAY, ROCK_THROW, IRON_TAIL
+	db -1 ; end
+
+
+ChuckGroup:
+	; CHUCK (1)
+	db "阿四@", TRAINERTYPE_MOVES
+	db 27, PRIMEAPE,   LEER, RAGE, KARATE_CHOP, FURY_SWIPES
+	db 30, POLIWRATH,  HYPNOSIS, MIND_READER, SURF, DYNAMICPUNCH
+	db -1 ; end
+
+
+ClairGroup:
+	; CLAIR (1)
+	db "小椿@", TRAINERTYPE_MOVES
+	db 37, DRAGONAIR,  THUNDER_WAVE, SURF, SLAM, DRAGONBREATH
+	db 37, DRAGONAIR,  THUNDER_WAVE, THUNDERBOLT, SLAM, DRAGONBREATH
+	db 37, DRAGONAIR,  THUNDER_WAVE, ICE_BEAM, SLAM, DRAGONBREATH
+	db 40, KINGDRA,    SMOKESCREEN, SURF, HYPER_BEAM, DRAGONBREATH
+	db -1 ; end
+
+
+	chs_at WillGroup
+	; WILL (1)
+	db "一树@", TRAINERTYPE_MOVES
+	db 40, XATU,       QUICK_ATTACK, FUTURE_SIGHT, CONFUSE_RAY, PSYCHIC_M
+	db 41, JYNX,       DOUBLESLAP, LOVELY_KISS, ICE_PUNCH, PSYCHIC_M
+	db 41, EXEGGUTOR,  REFLECT, LEECH_SEED, EGG_BOMB, PSYCHIC_M
+	db 41, SLOWBRO,    CURSE, AMNESIA, BODY_SLAM, PSYCHIC_M
+	db 42, XATU,       QUICK_ATTACK, FUTURE_SIGHT, CONFUSE_RAY, PSYCHIC_M
+	db -1 ; end
+
+
+PKMNTrainerGroup:
+	; CAL (1)
+	db "光亮@", TRAINERTYPE_NORMAL
+	db 10, CHIKORITA
+	db 10, CYNDAQUIL
+	db 10, TOTODILE
+	db -1 ; end
+
+	; CAL (2)
+	db "光亮@", TRAINERTYPE_NORMAL
+	db 30, BAYLEEF
+	db 30, QUILAVA
+	db 30, CROCONAW
+	db -1 ; end
+
+	; CAL (3)
+	db "光亮@", TRAINERTYPE_NORMAL
+	db 50, MEGANIUM
+	db 50, TYPHLOSION
+	db 50, FERALIGATR
+	db -1 ; end
+
+
+BrunoGroup:
+	; BRUNO (1)
+	db "希巴@", TRAINERTYPE_MOVES
+	db 42, HITMONTOP,  PURSUIT, QUICK_ATTACK, DIG, DETECT
+	db 42, HITMONLEE,  SWAGGER, DOUBLE_KICK, HI_JUMP_KICK, FORESIGHT
+	db 42, HITMONCHAN, THUNDERPUNCH, ICE_PUNCH, FIRE_PUNCH, MACH_PUNCH
+	db 43, ONIX,       BIND, EARTHQUAKE, SANDSTORM, ROCK_SLIDE
+	db 46, MACHAMP,    ROCK_SLIDE, FORESIGHT, VITAL_THROW, CROSS_CHOP
+	db -1 ; end
+
+
+KarenGroup:
+	; KAREN (1)
+	db "梨花@", TRAINERTYPE_MOVES
+	db 42, UMBREON,    SAND_ATTACK, CONFUSE_RAY, FAINT_ATTACK, MEAN_LOOK
+	db 42, VILEPLUME,  STUN_SPORE, ACID, MOONLIGHT, PETAL_DANCE
+	db 45, GENGAR,     LICK, SPITE, CURSE, DESTINY_BOND
+	db 44, MURKROW,    QUICK_ATTACK, WHIRLWIND, PURSUIT, FAINT_ATTACK
+	db 47, HOUNDOOM,   ROAR, PURSUIT, FLAMETHROWER, CRUNCH
+	db -1 ; end
+
+
+KogaGroup:
+	; KOGA (1)
+	db "阿桔@", TRAINERTYPE_MOVES
+	db 40, ARIADOS,    DOUBLE_TEAM, SPIDER_WEB, BATON_PASS, GIGA_DRAIN
+	db 41, VENOMOTH,   SUPERSONIC, GUST, PSYCHIC_M, TOXIC
+	db 43, FORRETRESS, PROTECT, SWIFT, EXPLOSION, SPIKES
+	db 42, MUK,        MINIMIZE, ACID_ARMOR, SLUDGE_BOMB, TOXIC
+	db 44, CROBAT,     DOUBLE_TEAM, QUICK_ATTACK, WING_ATTACK, TOXIC
+	db -1 ; end
+
+
+ChampionGroup:
+	; CHAMPION (1)
+	db "阿渡@", TRAINERTYPE_MOVES
+	db 44, GYARADOS,   FLAIL, RAIN_DANCE, SURF, HYPER_BEAM
+	db 47, DRAGONITE,  THUNDER_WAVE, TWISTER, THUNDER, HYPER_BEAM
+	db 47, DRAGONITE,  THUNDER_WAVE, TWISTER, BLIZZARD, HYPER_BEAM
+	db 46, AERODACTYL, WING_ATTACK, ANCIENTPOWER, ROCK_SLIDE, HYPER_BEAM
+	db 46, CHARIZARD,  FLAMETHROWER, WING_ATTACK, SLASH, HYPER_BEAM
+	db 50, DRAGONITE,  FIRE_BLAST, SAFEGUARD, OUTRAGE, HYPER_BEAM
+	db -1 ; end
+
+
+; Superseded copy of BrockGroup at its original address;
+; The CHS patch moved BrockGroup and changed the pointer to it.
+	chs_org BrockGroup, $0
+	; BROCK (1)
+	db "<小刚>@", TRAINERTYPE_MOVES
+	db 41, GRAVELER,   DEFENSE_CURL, ROCK_SLIDE, ROLLOUT, EARTHQUAKE
+	db 41, RHYHORN,    FURY_ATTACK, SCARY_FACE, EARTHQUAKE, HORN_DRILL
+	db 42, OMASTAR,    BITE, SURF, PROTECT, SPIKE_CANNON
+	db 44, ONIX,       BIND, ROCK_SLIDE, BIDE, SANDSTORM
+	db 42, KABUTOPS,   SLASH, SURF, ENDURE, GIGA_DRAIN
+	db -1 ; end
+
+
+MistyGroup:
+	; MISTY (1)
+	db "小霞@", TRAINERTYPE_MOVES
+	db 42, GOLDUCK,    SURF, DISABLE, PSYCH_UP, PSYCHIC_M
+	db 42, QUAGSIRE,   SURF, AMNESIA, EARTHQUAKE, RAIN_DANCE
+	db 44, LAPRAS,     SURF, PERISH_SONG, BLIZZARD, RAIN_DANCE
+	db 47, STARMIE,    SURF, CONFUSE_RAY, RECOVER, ICE_BEAM
+	db -1 ; end
+
+
+LtSurgeGroup:
+	; LT_SURGE (1)
+	db "马志士@", TRAINERTYPE_MOVES
+	db 44, RAICHU,     THUNDER_WAVE, QUICK_ATTACK, THUNDERBOLT, THUNDER
+	db 40, ELECTRODE,  SCREECH, DOUBLE_TEAM, SWIFT, EXPLOSION
+	db 40, MAGNETON,   LOCK_ON, DOUBLE_TEAM, SWIFT, ZAP_CANNON
+	db 40, ELECTRODE,  SCREECH, DOUBLE_TEAM, SWIFT, EXPLOSION
+	db 46, ELECTABUZZ, QUICK_ATTACK, THUNDERPUNCH, LIGHT_SCREEN, THUNDER
+	db -1 ; end
+
+
+ScientistGroup:
+	; SCIENTIST (1)
+	db "康文@", TRAINERTYPE_NORMAL
+	db 22, KOFFING
+	db 22, KOFFING
+	db -1 ; end
+
+	; SCIENTIST (2)
+	db "信弘@", TRAINERTYPE_NORMAL
+	db 24, DITTO
+	db -1 ; end
+
+	; SCIENTIST (3)
+	db "二雄@", TRAINERTYPE_NORMAL
+	db 20, MAGNEMITE
+	db 20, MAGNEMITE
+	db 20, MAGNEMITE
+	db -1 ; end
+
+	; SCIENTIST (4)
+	db "兼生@", TRAINERTYPE_NORMAL
+	db 27, MAGNEMITE
+	db 27, MAGNEMITE
+	db 27, MAGNEMITE
+	db -1 ; end
+
+	; SCIENTIST (5)
+	db "晋泰@", TRAINERTYPE_MOVES
+	db 30, PORYGON,    CONVERSION, CONVERSION2, RECOVER, TRI_ATTACK
+	db -1 ; end
+
+
+ErikaGroup:
+	; ERIKA (1)
+	db "莉佳@", TRAINERTYPE_MOVES
+	db 42, TANGELA,    VINE_WHIP, BIND, GIGA_DRAIN, SLEEP_POWDER
+	db 41, JUMPLUFF,   MEGA_DRAIN, LEECH_SEED, COTTON_SPORE, GIGA_DRAIN
+	db 46, VICTREEBEL, SUNNY_DAY, SYNTHESIS, ACID, RAZOR_LEAF
+	db 46, BELLOSSOM,  SUNNY_DAY, SYNTHESIS, PETAL_DANCE, SOLARBEAM
+	db -1 ; end
+
+
+YoungsterGroup:
+	; YOUNGSTER (1)
+	db "五郎@", TRAINERTYPE_NORMAL
+	db  4, RATTATA
+	db -1 ; end
+
+	; YOUNGSTER (2)
+	db "小明@", TRAINERTYPE_NORMAL
+	db  2, PIDGEY
+	db  4, RATTATA
+	db -1 ; end
+
+	; YOUNGSTER (3)
+	db "真悟@", TRAINERTYPE_NORMAL
+	db  6, RATTATA
+	db  8, ZUBAT
+	db -1 ; end
+
+	; YOUNGSTER (4)
+	db "雅贵@", TRAINERTYPE_NORMAL
+	db 10, WOOPER
+	db -1 ; end
+
+	; YOUNGSTER (5)
+	db "康太@", TRAINERTYPE_NORMAL
+	db  7, RATTATA
+	db 10, SANDSHREW
+	db  8, SPEAROW
+	db  8, SPEAROW
+	db -1 ; end
+
+	; YOUNGSTER (6)
+	db "翔平@", TRAINERTYPE_NORMAL
+	db 10, MANKEY
+	db 12, DIGLETT
+	db -1 ; end
+
+	; YOUNGSTER (7)
+	db "五郎@", TRAINERTYPE_NORMAL
+	db 15, RATTATA
+	db -1 ; end
+
+	; YOUNGSTER (8)
+	db "五郎@", TRAINERTYPE_MOVES
+	db 21, RATICATE,   TAIL_WHIP, QUICK_ATTACK, HYPER_FANG, SCARY_FACE
+	db -1 ; end
+
+	; YOUNGSTER (9)
+	db "昊昶@", TRAINERTYPE_NORMAL
+	db 35, FEAROW
+	db -1 ; end
+
+	; YOUNGSTER (10)
+	db "健太@", TRAINERTYPE_NORMAL
+	db 33, RATICATE
+	db 33, ARBOK
+	db -1 ; end
+
+	; YOUNGSTER (11)
+	db "子锐@", TRAINERTYPE_NORMAL
+	db 35, GROWLITHE
+	db -1 ; end
+
+	; YOUNGSTER (12)
+	db "鸿至@", TRAINERTYPE_NORMAL
+	db 33, SANDSLASH
+	db 33, CROBAT
+	db -1 ; end
+
+
+SchoolboyGroup:
+	; SCHOOLBOY (1)
+	db "秀一@", TRAINERTYPE_NORMAL
+	db 12, ODDISH
+	db 15, VOLTORB
+	db -1 ; end
+
+	; SCHOOLBOY (2)
+	db "智行@", TRAINERTYPE_NORMAL
+	db 27, VOLTORB
+	db 27, MAGNEMITE
+	db 31, VOLTORB
+	db 31, MAGNETON
+	db -1 ; end
+
+	; SCHOOLBOY (3)
+	db "阿勉@", TRAINERTYPE_NORMAL
+	db 16, TANGELA
+	db -1 ; end
+
+	; SCHOOLBOY (4)
+	db "公康　@", TRAINERTYPE_NORMAL
+	db 29, BELLSPROUT
+	db 31, WEEPINBELL
+	db 33, VICTREEBEL
+	db -1 ; end
+
+	; SCHOOLBOY (5)
+	db "德隆@", TRAINERTYPE_NORMAL
+	db 31, JYNX
+	db 31, ELECTABUZZ
+	db 31, MAGMAR
+	db -1 ; end
+
+	; SCHOOLBOY (6)
+	db "一伟@", TRAINERTYPE_NORMAL
+	db 32, XATU
+	db 34, ALAKAZAM
+	db -1 ; end
+
+	; SCHOOLBOY (7)
+	db "研诚@", TRAINERTYPE_NORMAL
+	db 35, ODDISH
+	db -1 ; end
+
+	; SCHOOLBOY (8)
+	db "振倢@", TRAINERTYPE_NORMAL
+	db 33, TANGELA
+	db 33, VAPOREON
+	db -1 ; end
+
+	; SCHOOLBOY (9)
+	db "祺逸@", TRAINERTYPE_NORMAL
+	db 27, PARAS
+	db 27, PARAS
+	db 27, POLIWHIRL
+	db 35, DITTO
+	db -1 ; end
+
+	; SCHOOLBOY (10)
+	db "立生@", TRAINERTYPE_NORMAL
+	db 19, MR__MIME
+	db -1 ; end
+
+	; SCHOOLBOY (11)
+	db "真幸@", TRAINERTYPE_NORMAL
+	db 32, LEDIAN
+	db 32, EXEGGUTOR
+	db -1 ; end
+
+	; SCHOOLBOY (12)
+	db "阿淳@", TRAINERTYPE_NORMAL
+	db 32, AIPOM
+	db 32, DITTO
+	db -1 ; end
+
+	; SCHOOLBOY (13)
+	db "秀一@", TRAINERTYPE_NORMAL
+	db 14, ODDISH
+	db 17, VOLTORB
+	db -1 ; end
+
+	; SCHOOLBOY (14)
+	db "秀一@", TRAINERTYPE_NORMAL
+	db 28, GLOOM
+	db 31, ELECTRODE
+	db -1 ; end
+
+	; SCHOOLBOY (15)
+	db "阿勉@", TRAINERTYPE_NORMAL
+	db 17, TANGELA
+	db 17, YANMA
+	db -1 ; end
+
+	; SCHOOLBOY (16)
+	db "阿勉@", TRAINERTYPE_NORMAL
+	db 20, NATU
+	db 22, TANGELA
+	db 20, QUAGSIRE
+	db 25, YANMA
+	db -1 ; end
+
+	; SCHOOLBOY (17)
+	db "立生@", TRAINERTYPE_NORMAL
+	db 19, MR__MIME
+	db 19, MAGNEMITE
+	db -1 ; end
+
+	; SCHOOLBOY (18)
+	db "立生@", TRAINERTYPE_NORMAL
+	db 27, MR__MIME
+	db 31, MAGNETON
+	db -1 ; end
+
+
+BirdKeeperGroup:
+	; BIRD_KEEPER (1)
+	db "小翼@", TRAINERTYPE_NORMAL
+	db  7, PIDGEY
+	db  7, PIDGEY
+	db -1 ; end
+
+	; BIRD_KEEPER (2)
+	db "翔太@", TRAINERTYPE_NORMAL
+	db  9, SPEAROW
+	db -1 ; end
+
+	; BIRD_KEEPER (3)
+	db "吉一@", TRAINERTYPE_NORMAL
+	db 12, PIDGEY
+	db 14, PIDGEOTTO
+	db -1 ; end
+
+	; BIRD_KEEPER (4)
+	db "国彦@", TRAINERTYPE_NORMAL
+	db 17, PIDGEY
+	db 15, PIDGEY
+	db 19, PIDGEY
+	db 15, PIDGEY
+	db 15, PIDGEY
+	db -1 ; end
+
+	; BIRD_KEEPER (5)
+	db "春树@", TRAINERTYPE_NORMAL
+	db 15, DODUO
+	db 16, DODUO
+	db 17, DODUO
+	db -1 ; end
+
+	; BIRD_KEEPER (6)
+	db "明宪@", TRAINERTYPE_NORMAL
+	db 18, SPEAROW
+	db 20, FEAROW
+	db 18, SPEAROW
+	db -1 ; end
+
+	; BIRD_KEEPER (7)
+	db "本弘@", TRAINERTYPE_NORMAL
+	db 25, PIDGEOTTO
+	db 25, PIDGEOTTO
+	db -1 ; end
+
+	; BIRD_KEEPER (8)
+	db "宇生@", TRAINERTYPE_NORMAL
+	db 12, PIDGEY
+	db 34, PIDGEOT
+	db -1 ; end
+
+	; BIRD_KEEPER (9)
+	db "捷盛@", TRAINERTYPE_NORMAL
+	db 29, FEAROW
+	db 35, FEAROW
+	db -1 ; end
+
+	; BIRD_KEEPER (10)
+	db "翔逸@", TRAINERTYPE_NORMAL
+	db 30, DODUO
+	db 28, DODUO
+	db 32, DODRIO
+	db -1 ; end
+
+	; BIRD_KEEPER (11)
+	db "鹰豪@", TRAINERTYPE_NORMAL
+	db 34, NOCTOWL
+	db -1 ; end
+
+	; BIRD_KEEPER (12)
+	db "英治@", TRAINERTYPE_NORMAL
+	db 37, FARFETCH_D
+	db -1 ; end
+
+	; BIRD_KEEPER (13)
+	db "渡利@", TRAINERTYPE_NORMAL
+	db  6, PIDGEY
+	db  6, PIDGEY
+	db  8, SPEAROW
+	db -1 ; end
+
+	; BIRD_KEEPER (14)
+	db "英治@", TRAINERTYPE_NORMAL
+	db 35, FARFETCH_D
+	db -1 ; end
+
+	; BIRD_KEEPER (15)
+	db "乘旻@", TRAINERTYPE_NORMAL
+	db 34, FARFETCH_D
+	db -1 ; end
+
+	; BIRD_KEEPER (16)
+	db "育升@", TRAINERTYPE_NORMAL
+	db 32, PIDGEOTTO
+	db 32, FEAROW
+	db -1 ; end
+
+	; BIRD_KEEPER (17)
+	db "英治@", TRAINERTYPE_NORMAL
+	db 41, FARFETCH_D
+	db -1 ; end
+
+	; BIRD_KEEPER (18)
+	db "本弘@", TRAINERTYPE_NORMAL
+	db 31, PIDGEOTTO
+	db 33, PIDGEOTTO
+	db -1 ; end
+
+	; BIRD_KEEPER (19)
+	db "本弘@", TRAINERTYPE_NORMAL
+	db 35, PIDGEOTTO
+	db 37, PIDGEOT
+	db -1 ; end
+
+
+LassGroup:
+	; LASS (1)
+	db "美香@", TRAINERTYPE_MOVES
+	db 18, SNUBBULL,   SCARY_FACE, CHARM, BITE, LICK
+	db -1 ; end
+
+	; LASS (2)
+	db "飞鸟　@", TRAINERTYPE_NORMAL
+	db 15, JIGGLYPUFF
+	db 15, JIGGLYPUFF
+	db 15, JIGGLYPUFF
+	db -1 ; end
+
+	; LASS (3)
+	db "咏馨@", TRAINERTYPE_NORMAL
+	db 30, GLOOM
+	db 34, ARBOK
+	db 30, GLOOM
+	db -1 ; end
+
+	; LASS (4)
+	db "千佳@", TRAINERTYPE_NORMAL
+	db 12, ODDISH
+	db 15, CUBONE
+	db -1 ; end
+
+	; LASS (5)
+	db "玲美@", TRAINERTYPE_NORMAL
+	db 21, MARILL
+	db -1 ; end
+
+	; LASS (6)
+	db "秋妍@", TRAINERTYPE_NORMAL
+	db 30, BULBASAUR
+	db 32, IVYSAUR
+	db 34, VENUSAUR
+	db -1 ; end
+
+	; LASS (7)
+	db "蜜娜@", TRAINERTYPE_NORMAL
+	db 28, GLOOM
+	db 31, PIDGEOTTO
+	db 31, BELLOSSOM
+	db -1 ; end
+
+	; LASS (8)
+	db "芷玥@", TRAINERTYPE_NORMAL
+	db 29, PARAS
+	db 29, PARAS
+	db 32, PARASECT
+	db -1 ; end
+
+	; LASS (9)
+	db "慧云@", TRAINERTYPE_NORMAL
+	db 32, SKIPLOOM
+	db 33, HOPPIP
+	db 34, JUMPLUFF
+	db -1 ; end
+
+	; LASS (10)
+	db "阿香@", TRAINERTYPE_MOVES
+	db 18, FLAAFFY,    TACKLE, GROWL, THUNDERSHOCK, THUNDER_WAVE
+	db 18, PSYDUCK,    SCRATCH, TAIL_WHIP, DISABLE, CONFUSION
+	db -1 ; end
+
+	; LASS (11)
+	db "柔兰@", TRAINERTYPE_NORMAL
+	db 30, WIGGLYTUFF
+	db 34, GRANBULL
+	db -1 ; end
+
+	; LASS (12)
+	db "玲美@", TRAINERTYPE_NORMAL
+	db 21, MARILL
+	db -1 ; end
+
+	; LASS (13)
+	db "玲美@", TRAINERTYPE_NORMAL
+	db 21, MARILL
+	db -1 ; end
+
+	; LASS (14)
+	db "阿香@", TRAINERTYPE_MOVES
+	db 21, FLAAFFY,    TACKLE, GROWL, THUNDERSHOCK, THUNDER_WAVE
+	db 21, PSYDUCK,    SCRATCH, TAIL_WHIP, DISABLE, CONFUSION
+	db -1 ; end
+
+	; LASS (15)
+	db "阿香@", TRAINERTYPE_MOVES
+	db 29, PSYDUCK,    SCRATCH, DISABLE, CONFUSION, SCREECH
+	db 29, AMPHAROS,   TACKLE, THUNDERSHOCK, THUNDER_WAVE, COTTON_SPORE
+	db -1 ; end
+
+
+JanineGroup:
+	; JANINE (1)
+	db "阿杏@", TRAINERTYPE_MOVES
+	db 36, CROBAT,     SCREECH, SUPERSONIC, CONFUSE_RAY, WING_ATTACK
+	db 36, WEEZING,    SMOG, SLUDGE_BOMB, TOXIC, EXPLOSION
+	db 36, WEEZING,    SMOG, SLUDGE_BOMB, TOXIC, EXPLOSION
+	db 33, ARIADOS,    SCARY_FACE, GIGA_DRAIN, STRING_SHOT, NIGHT_SHADE
+	db 39, VENOMOTH,   FORESIGHT, DOUBLE_TEAM, GUST, PSYCHIC_M
+	db -1 ; end
+
+
+CooltrainerMGroup:
+	; COOLTRAINERM (1)
+	db "建@", TRAINERTYPE_MOVES
+	db 26, CHARMANDER, EMBER, SMOKESCREEN, RAGE, SCARY_FACE
+	db 26, SQUIRTLE,   WITHDRAW, WATER_GUN, BITE, CURSE
+	db 26, BULBASAUR,  LEECH_SEED, POISONPOWDER, SLEEP_POWDER, RAZOR_LEAF
+	db -1 ; end
+
+	; COOLTRAINERM (2)
+	db "小优@", TRAINERTYPE_NORMAL
+	db 24, IVYSAUR
+	db 24, CHARMELEON
+	db 24, WARTORTLE
+	db -1 ; end
+
+	; COOLTRAINERM (3)
+	db "胜贤@", TRAINERTYPE_NORMAL
+	db 34, DRATINI
+	db 34, DRATINI
+	db 34, DRATINI
+	db -1 ; end
+
+	; COOLTRAINERM (4)
+	db "智彦@", TRAINERTYPE_NORMAL
+	db 34, HORSEA
+	db 36, SEADRA
+	db -1 ; end
+
+	; COOLTRAINERM (5)
+	db "铁郎@", TRAINERTYPE_NORMAL
+	db 37, DRAGONAIR
+	db -1 ; end
+
+	; COOLTRAINERM (6)
+	db "小周@", TRAINERTYPE_MOVES
+	db 34, VICTREEBEL, WRAP, TOXIC, ACID, RAZOR_LEAF
+	db 34, KINGLER,    BUBBLEBEAM, STOMP, GUILLOTINE, PROTECT
+	db 34, FLAREON,    SAND_ATTACK, QUICK_ATTACK, BITE, FIRE_SPIN
+	db -1 ; end
+
+	; COOLTRAINERM (7)
+	db "小周@", TRAINERTYPE_MOVES
+	db 38, VICTREEBEL, WRAP, TOXIC, ACID, RAZOR_LEAF
+	db 38, KINGLER,    BUBBLEBEAM, STOMP, GUILLOTINE, PROTECT
+	db 38, FLAREON,    SAND_ATTACK, QUICK_ATTACK, BITE, FIRE_SPIN
+	db -1 ; end
+
+	; COOLTRAINERM (8)
+	db "阿勇@", TRAINERTYPE_MOVES
+	db 25, PIDGEOT,    SAND_ATTACK, QUICK_ATTACK, WHIRLWIND, WING_ATTACK
+	db 27, ELECTABUZZ, THUNDERPUNCH, LIGHT_SCREEN, SWIFT, SCREECH
+	db -1 ; end
+
+	; COOLTRAINERM (9)
+	db "优树@", TRAINERTYPE_MOVES
+	db 33, PARASECT,   LEECH_LIFE, SPORE, SLASH, SWORDS_DANCE
+	db 35, GOLDUCK,    CONFUSION, SCREECH, PSYCH_UP, FURY_SWIPES
+	db -1 ; end
+
+	; COOLTRAINERM (10)
+	db "小周@", TRAINERTYPE_MOVES
+	db 32, VICTREEBEL, WRAP, TOXIC, ACID, RAZOR_LEAF
+	db 32, KINGLER,    BUBBLEBEAM, STOMP, GUILLOTINE, PROTECT
+	db 32, FLAREON,    SAND_ATTACK, QUICK_ATTACK, BITE, FIRE_SPIN
+	db -1 ; end
+
+	; COOLTRAINERM (11)
+	db "秀幸@", TRAINERTYPE_MOVES
+	db 33, MAGNETON,   THUNDERBOLT, SUPERSONIC, SWIFT, SCREECH
+	db 31, QUAGSIRE,   WATER_GUN, SLAM, AMNESIA, EARTHQUAKE
+	db 31, EXEGGCUTE,  LEECH_SEED, CONFUSION, SLEEP_POWDER, SOLARBEAM
+	db -1 ; end
+
+	; COOLTRAINERM (12)
+	db "拓也　@", TRAINERTYPE_MOVES
+	db 35, SANDSLASH,  SAND_ATTACK, POISON_STING, SLASH, SWIFT
+	db -1 ; end
+
+	; COOLTRAINERM (13)
+	db "秀秀@", TRAINERTYPE_NORMAL
+	db 10, BULBASAUR
+	db 10, CHARMANDER
+	db 10, SQUIRTLE
+	db -1 ; end
+
+	; COOLTRAINERM (14)
+	db "汤达@", TRAINERTYPE_NORMAL
+	db 10, BULBASAUR
+	db 10, CHARMANDER
+	db 10, SQUIRTLE
+	db -1 ; end
+
+	; COOLTRAINERM (15)
+	db "浩司@", TRAINERTYPE_NORMAL
+	db 10, BULBASAUR
+	db 10, CHARMANDER
+	db 10, SQUIRTLE
+	db -1 ; end
+
+	; COOLTRAINERM (16)
+	db "真司@", TRAINERTYPE_NORMAL
+	db 35, FLAREON
+	db 35, TANGELA
+	db 35, TAUROS
+	db -1 ; end
+
+	; COOLTRAINERM (17)
+	db "凯越@", TRAINERTYPE_NORMAL
+	db 38, RHYHORN
+	db 35, CHARMELEON
+	db 35, WARTORTLE
+	db -1 ; end
+
+	; COOLTRAINERM (18)
+	db "俊夫@", TRAINERTYPE_NORMAL
+	db 14, BULBASAUR
+	db 14, CHARMANDER
+	db 14, SQUIRTLE
+	db -1 ; end
+
+	; COOLTRAINERM (19)
+	db "小豪@", TRAINERTYPE_MOVES
+	db 27, CHARMELEON, EMBER, SMOKESCREEN, RAGE, SCARY_FACE
+	db -1 ; end
+
+
+CooltrainerFGroup:
+	; COOLTRAINERF (1)
+	db "绯月@", TRAINERTYPE_NORMAL
+	db 26, EEVEE
+	db 22, FLAREON
+	db 22, VAPOREON
+	db 22, JOLTEON
+	db -1 ; end
+
+	; COOLTRAINERF (2)
+	db "千寻@", TRAINERTYPE_MOVES
+	db 25, SKIPLOOM,   SYNTHESIS, POISONPOWDER, MEGA_DRAIN, LEECH_SEED
+	db 25, NINETALES,  EMBER, QUICK_ATTACK, CONFUSE_RAY, SAFEGUARD
+	db -1 ; end
+
+	; COOLTRAINERF (3)
+	db "知惠@", TRAINERTYPE_NORMAL
+	db 37, SEADRA
+	db -1 ; end
+
+	; COOLTRAINERF (4)
+	db "理子@", TRAINERTYPE_NORMAL
+	db 34, DRATINI
+	db 36, DRAGONAIR
+	db -1 ; end
+
+	; COOLTRAINERF (5)
+	db "真理亚@", TRAINERTYPE_NORMAL
+	db 26, SHELLDER
+	db 28, CLOYSTER
+	db -1 ; end
+
+	; COOLTRAINERF (6)
+	db "真理纱@", TRAINERTYPE_NORMAL
+	db 22, GOLDEEN
+	db 24, SEAKING
+	db -1 ; end
+
+	; COOLTRAINERF (7)
+	db "华莲@", TRAINERTYPE_NORMAL
+	db 27, MARILL
+	db 24, WARTORTLE
+	db 24, WARTORTLE
+	db -1 ; end
+
+	; COOLTRAINERF (8)
+	db "蕾佳　@", TRAINERTYPE_MOVES
+	db 36, PIKACHU,    QUICK_ATTACK, DOUBLE_TEAM, THUNDERBOLT, THUNDER
+	db 32, BLASTOISE,  BITE, CURSE, SURF, RAIN_DANCE
+	db -1 ; end
+
+	; COOLTRAINERF (9)
+	db "仁美@", TRAINERTYPE_MOVES
+	db 36, RAPIDASH,   STOMP, FIRE_SPIN, FURY_ATTACK, AGILITY
+	db -1 ; end
+
+	; COOLTRAINERF (10)
+	db "夏帆@", TRAINERTYPE_NORMAL
+	db 31, STARMIE
+	db 33, NIDOQUEEN
+	db 31, STARMIE
+	db -1 ; end
+
+	; COOLTRAINERF (11)
+	db "彩夏@", TRAINERTYPE_MOVES
+	db 32, BULBASAUR,  GROWL, LEECH_SEED, POISONPOWDER, RAZOR_LEAF
+	db 32, IVYSAUR,    GROWL, LEECH_SEED, POISONPOWDER, RAZOR_LEAF
+	db 32, VENUSAUR,   BODY_SLAM, SLEEP_POWDER, RAZOR_LEAF, SWEET_SCENT
+	db -1 ; end
+
+	; COOLTRAINERF (12)
+	db "仁美@", TRAINERTYPE_MOVES
+	db 38, RAPIDASH,   STOMP, FIRE_SPIN, FURY_ATTACK, AGILITY
+	db -1 ; end
+
+	; COOLTRAINERF (13)
+	db "奈子@", TRAINERTYPE_NORMAL
+	db 35, ELECTRODE
+	db 35, STARMIE
+	db 35, NINETALES
+	db -1 ; end
+
+	; COOLTRAINERF (14)
+	db "爱儿@", TRAINERTYPE_NORMAL
+	db 38, IVYSAUR
+	db 38, STARMIE
+	db -1 ; end
+
+	; COOLTRAINERF (15)
+	db "沙里奈@", TRAINERTYPE_NORMAL
+	db 28, POLIWHIRL
+	db -1 ; end
+
+	; COOLTRAINERF (16)
+	db "小望@", TRAINERTYPE_MOVES
+	db 25, BUTTERFREE, CONFUSION, SLEEP_POWDER, WHIRLWIND, GUST
+	db 25, BELLOSSOM,  ABSORB, STUN_SPORE, ACID, SOLARBEAM
+	db -1 ; end
+
+	; COOLTRAINERF (17)
+	db "<真香><理　>@", TRAINERTYPE_NORMAL
+	db 24, STARYU
+	db 26, STARMIE
+	db -1 ; end
+
+	; COOLTRAINERF (18)
+	db "仁美@", TRAINERTYPE_MOVES
+	db 42, RAPIDASH,   STOMP, FIRE_SPIN, FURY_ATTACK, AGILITY
+	db -1 ; end
+
+	; COOLTRAINERF (19)
+	db "夏帆@", TRAINERTYPE_NORMAL
+	db 33, STARMIE
+	db 35, NIDOQUEEN
+	db 33, STARMIE
+	db -1 ; end
+
+	; COOLTRAINERF (20)
+	db "夏帆@", TRAINERTYPE_NORMAL
+	db 37, STARMIE
+	db 39, NIDOQUEEN
+	db 37, STARMIE
+	db -1 ; end
+
+
+BeautyGroup:
+	; BEAUTY (1)
+	db "朱美@", TRAINERTYPE_NORMAL
+	db  9, SENTRET
+	db 13, SENTRET
+	db 17, SENTRET
+	db -1 ; end
+
+	; BEAUTY (2)
+	db "直子@", TRAINERTYPE_MOVES
+	db 16, MEOWTH,     SCRATCH, GROWL, BITE, PAY_DAY
+	db 16, MEOWTH,     SCRATCH, GROWL, BITE, SLASH
+	db -1 ; end
+
+	; BEAUTY (3)
+	db "朵蜜@", TRAINERTYPE_NORMAL
+	db 15, SENTRET
+	db -1 ; end
+
+	; BEAUTY (4)
+	db "法苏@", TRAINERTYPE_NORMAL
+	db 15, SENTRET
+	db -1 ; end
+
+	; BEAUTY (5)
+	db "拉缇@", TRAINERTYPE_NORMAL
+	db 16, FURRET
+	db -1 ; end
+
+	; BEAUTY (6)
+	db "彩子@", TRAINERTYPE_NORMAL
+	db 28, VILEPLUME
+	db 34, BUTTERFREE
+	db -1 ; end
+
+	; BEAUTY (7)
+	db "美琪@", TRAINERTYPE_NORMAL
+	db 30, MARILL
+	db 32, SEEL
+	db 30, MARILL
+	db -1 ; end
+
+	; BEAUTY (8)
+	db "美雪@", TRAINERTYPE_NORMAL
+	db 15, SENTRET
+	db -1 ; end
+
+	; BEAUTY (9)
+	db "小蓝@", TRAINERTYPE_NORMAL
+	db 15, SENTRET
+	db -1 ; end
+
+	; BEAUTY (10)
+	db "小圆@", TRAINERTYPE_NORMAL
+	db 15, SENTRET
+	db -1 ; end
+
+	; BEAUTY (11)
+	db "沙香@", TRAINERTYPE_NORMAL
+	db 15, SENTRET
+	db -1 ; end
+
+	; BEAUTY (12)
+	db "杏子@", TRAINERTYPE_NORMAL
+	db 15, SENTRET
+	db -1 ; end
+
+	; BEAUTY (13)
+	db "麻美@", TRAINERTYPE_NORMAL
+	db 15, SENTRET
+	db -1 ; end
+
+	; BEAUTY (14)
+	db "夏树@", TRAINERTYPE_NORMAL
+	db 32, PARAS
+	db 32, EXEGGCUTE
+	db 35, PARASECT
+	db -1 ; end
+
+	; BEAUTY (15)
+	db "小渚@", TRAINERTYPE_NORMAL
+	db 15, SENTRET
+	db -1 ; end
+
+	; BEAUTY (16)
+	db "梨香@", TRAINERTYPE_MOVES
+	db 17, HOPPIP,     SYNTHESIS, TAIL_WHIP, TACKLE, POISONPOWDER
+	db 17, SKIPLOOM,   SYNTHESIS, TAIL_WHIP, TACKLE, STUN_SPORE
+	db -1 ; end
+
+
+PokemaniacGroup:
+	; POKEMANIAC (1)
+	db "格彦@", TRAINERTYPE_NORMAL
+	db 10, SLOWPOKE
+	db -1 ; end
+
+	; POKEMANIAC (2)
+	db "雅明@", TRAINERTYPE_NORMAL
+	db 24, MAROWAK
+	db 24, MAROWAK
+	db -1 ; end
+
+	; POKEMANIAC (3)
+	db "直也　@", TRAINERTYPE_NORMAL
+	db 26, KANGASKHAN
+	db -1 ; end
+
+	; POKEMANIAC (4)
+	db "俊信@", TRAINERTYPE_NORMAL
+	db 16, NIDORINA
+	db 16, NIDORINO
+	db -1 ; end
+
+	; POKEMANIAC (5)
+	db "小杰@", TRAINERTYPE_NORMAL
+	db 19, SLOWBRO
+	db -1 ; end
+
+	; POKEMANIAC (6)
+	db "小诚@", TRAINERTYPE_NORMAL
+	db 19, LICKITUNG
+	db -1 ; end
+
+	; POKEMANIAC (7)
+	db "和嗣@", TRAINERTYPE_NORMAL
+	db 19, NIDOKING
+	db -1 ; end
+
+	; POKEMANIAC (8)
+	db "正臣@", TRAINERTYPE_NORMAL
+	db 31, RHYHORN
+	db 31, RHYDON
+	db -1 ; end
+
+	; POKEMANIAC (9)
+	db "小诚@", TRAINERTYPE_NORMAL
+	db 19, NIDORAN_F
+	db 23, NIDOKING
+	db -1 ; end
+
+	; POKEMANIAC (10)
+	db "小诚@", TRAINERTYPE_NORMAL
+	db 28, NIDORAN_M
+	db 28, NIDORAN_F
+	db 30, NIDORINA
+	db 32, NIDOKING
+	db -1 ; end
+
+	; POKEMANIAC (11)
+	db "阿正@", TRAINERTYPE_MOVES
+	db 12, LICKITUNG,  LICK, SUPERSONIC, CUT, NO_MOVE
+	db -1 ; end
+
+	; POKEMANIAC (12)
+	db "宏明@", TRAINERTYPE_NORMAL
+	db 10, SLOWPOKE
+	db 10, SLOWPOKE
+	db -1 ; end
+
+	; POKEMANIAC (13)
+	db "基文@", TRAINERTYPE_NORMAL
+	db 27, RHYHORN
+	db -1 ; end
+
+
+GruntMGroup:
+	; GRUNTM (1)
+	db "手下　　@", TRAINERTYPE_NORMAL
+	db 14, KOFFING
+	db -1 ; end
+
+	; GRUNTM (2)
+	db "手下　　@", TRAINERTYPE_NORMAL
+	db  7, RATTATA
+	db  9, ZUBAT
+	db  9, ZUBAT
+	db -1 ; end
+
+	; GRUNTM (3)
+	db "手下　　@", TRAINERTYPE_NORMAL
+	db 24, RATICATE
+	db 24, RATICATE
+	db -1 ; end
+
+	; GRUNTM (4)
+	db "手下　　@", TRAINERTYPE_NORMAL
+	db 23, GRIMER
+	db 23, GRIMER
+	db 25, MUK
+	db -1 ; end
+
+	; GRUNTM (5)
+	db "手下　　@", TRAINERTYPE_NORMAL
+	db 21, RATTATA
+	db 21, RATTATA
+	db 23, RATTATA
+	db 23, RATTATA
+	db 23, RATTATA
+	db -1 ; end
+
+	; GRUNTM (6)
+	db "手下　　@", TRAINERTYPE_NORMAL
+	db 26, ZUBAT
+	db 26, ZUBAT
+	db -1 ; end
+
+	; GRUNTM (7)
+	db "手下　　@", TRAINERTYPE_NORMAL
+	db 23, KOFFING
+	db 23, GRIMER
+	db 23, ZUBAT
+	db 23, RATTATA
+	db -1 ; end
+
+	; GRUNTM (8)
+	db "手下　　@", TRAINERTYPE_NORMAL
+	db 26, WEEZING
+	db -1 ; end
+
+	; GRUNTM (9)
+	db "手下　　@", TRAINERTYPE_NORMAL
+	db 24, RATICATE
+	db 26, KOFFING
+	db -1 ; end
+
+	; GRUNTM (10)
+	db "手下　　@", TRAINERTYPE_NORMAL
+	db 22, ZUBAT
+	db 24, GOLBAT
+	db 22, GRIMER
+	db -1 ; end
+
+	; GRUNTM (11)
+	db "手下　　@", TRAINERTYPE_NORMAL
+	db 23, MUK
+	db 23, KOFFING
+	db 25, RATTATA
+	db -1 ; end
+
+	; GRUNTM (12)
+	db "干部@", TRAINERTYPE_NORMAL
+	db 33, HOUNDOUR
+	db -1 ; end
+
+	; GRUNTM (13)
+	db "手下　　@", TRAINERTYPE_NORMAL
+	db 27, RATTATA
+	db -1 ; end
+
+	; GRUNTM (14)
+	db "手下　　@", TRAINERTYPE_NORMAL
+	db 24, RATICATE
+	db 24, GOLBAT
+	db -1 ; end
+
+	; GRUNTM (15)
+	db "手下　　@", TRAINERTYPE_NORMAL
+	db 26, GRIMER
+	db 23, WEEZING
+	db -1 ; end
+
+	; GRUNTM (16)
+	db "手下　　@", TRAINERTYPE_NORMAL
+	db 16, RATTATA
+	db 16, RATTATA
+	db 16, RATTATA
+	db 16, RATTATA
+	db -1 ; end
+
+	; GRUNTM (17)
+	db "手下　　@", TRAINERTYPE_NORMAL
+	db 18, GOLBAT
+	db -1 ; end
+
+	; GRUNTM (18)
+	db "手下　　@", TRAINERTYPE_NORMAL
+	db 17, RATTATA
+	db 17, ZUBAT
+	db 17, RATTATA
+	db -1 ; end
+
+	; GRUNTM (19)
+	db "手下　　@", TRAINERTYPE_NORMAL
+	db 18, VENONAT
+	db 18, VENONAT
+	db -1 ; end
+
+	; GRUNTM (20)
+	db "手下　　@", TRAINERTYPE_NORMAL
+	db 17, DROWZEE
+	db 19, ZUBAT
+	db -1 ; end
+
+	; GRUNTM (21)
+	db "手下　　@", TRAINERTYPE_NORMAL
+	db 16, ZUBAT
+	db 17, GRIMER
+	db 18, RATTATA
+	db -1 ; end
+
+	; GRUNTM (22)
+	db "干部@", TRAINERTYPE_NORMAL
+	db 36, GOLBAT
+	db -1 ; end
+
+	; GRUNTM (23)
+	db "干部@", TRAINERTYPE_NORMAL
+	db 30, KOFFING
+	db -1 ; end
+
+	; GRUNTM (24)
+	db "手下　　@", TRAINERTYPE_NORMAL
+	db 25, KOFFING
+	db 25, KOFFING
+	db -1 ; end
+
+	; GRUNTM (25)
+	db "手下　　@", TRAINERTYPE_NORMAL
+	db 24, KOFFING
+	db 24, MUK
+	db -1 ; end
+
+	; GRUNTM (26)
+	db "手下　　@", TRAINERTYPE_NORMAL
+	db 15, RATTATA
+	db 15, RATTATA
+	db -1 ; end
+
+	; GRUNTM (27)
+	db "干部@", TRAINERTYPE_NORMAL
+	db 22, ZUBAT
+	db -1 ; end
+
+	; GRUNTM (28)
+	db "手下　　@", TRAINERTYPE_NORMAL
+	db 19, RATICATE
+	db -1 ; end
+
+	; GRUNTM (29)
+	db "手下　　@", TRAINERTYPE_NORMAL
+	db  9, RATTATA
+	db  9, RATTATA
+	db -1 ; end
+
+	; GRUNTM (30)
+	db "手下　　@", TRAINERTYPE_NORMAL
+	db 25, GOLBAT
+	db 25, GOLBAT
+	db 30, ARBOK
+	db -1 ; end
+
+	; GRUNTM (31)
+	db "手下　　@", TRAINERTYPE_NORMAL
+	db 30, GOLBAT
+	db -1 ; end
+
+
+GentlemanGroup:
+	; GENTLEMAN (1)
+	db "乔治　@", TRAINERTYPE_NORMAL
+	db 18, GROWLITHE
+	db 18, GROWLITHE
+	db -1 ; end
+
+	; GENTLEMAN (2)
+	db "爱德华　@", TRAINERTYPE_NORMAL
+	db 33, PERSIAN
+	db -1 ; end
+
+	; GENTLEMAN (3)
+	db "安东尼@", TRAINERTYPE_NORMAL
+	db 37, PIKACHU
+	db 33, FLAAFFY
+	db -1 ; end
+
+	; GENTLEMAN (4)
+	db "基尔巴@", TRAINERTYPE_NORMAL
+	db 20, PONYTA
+	db -1 ; end
+
+	; GENTLEMAN (5)
+	db "卡内@", TRAINERTYPE_NORMAL
+	db 20, NOCTOWL
+	db -1 ; end
+
+
+SkierGroup:
+	; SKIER (1)
+	db "幸子@", TRAINERTYPE_NORMAL
+	db 28, JYNX
+	db -1 ; end
+
+	; SKIER (2)
+	db "亚由美@", TRAINERTYPE_NORMAL
+	db 28, DEWGONG
+	db -1 ; end
+
+
+TeacherGroup:
+	; TEACHER (1)
+	db "淑琴@", TRAINERTYPE_NORMAL
+	db 36, CLEFAIRY
+	db -1 ; end
+
+	; TEACHER (2)
+	db "卿芳@", TRAINERTYPE_NORMAL
+	db 32, AIPOM
+	db 36, CUBONE
+	db -1 ; end
+
+	; TEACHER (3)
+	db "纪香@", TRAINERTYPE_NORMAL
+	db 35, JIGGLYPUFF
+	db -1 ; end
+
+
+SabrinaGroup:
+	; SABRINA (1)
+	db "娜姿@", TRAINERTYPE_MOVES
+	db 46, ESPEON,     SAND_ATTACK, QUICK_ATTACK, SWIFT, PSYCHIC_M
+	db 46, MR__MIME,   BARRIER, REFLECT, BATON_PASS, PSYCHIC_M
+	db 48, ALAKAZAM,   RECOVER, FUTURE_SIGHT, PSYCHIC_M, REFLECT
+	db -1 ; end
+
+
+BugCatcherGroup:
+	; BUG_CATCHER (1)
+	db "干泰@", TRAINERTYPE_NORMAL
+	db  3, CATERPIE
+	db  3, CATERPIE
+	db -1 ; end
+
+	; BUG_CATCHER (2)
+	db "彦和@", TRAINERTYPE_NORMAL
+	db 32, BEEDRILL
+	db 32, BUTTERFREE
+	db -1 ; end
+
+	; BUG_CATCHER (3)
+	db "辉奇@", TRAINERTYPE_NORMAL
+	db 30, BEEDRILL
+	db 30, BEEDRILL
+	db 30, BEEDRILL
+	db -1 ; end
+
+	; BUG_CATCHER (4)
+	db "光一@", TRAINERTYPE_NORMAL
+	db  2, CATERPIE
+	db  2, CATERPIE
+	db  3, WEEDLE
+	db  2, CATERPIE
+	db -1 ; end
+
+	; BUG_CATCHER (5)
+	db "贞夫@", TRAINERTYPE_NORMAL
+	db  7, WEEDLE
+	db  9, KAKUNA
+	db 12, BEEDRILL
+	db -1 ; end
+
+	; BUG_CATCHER (6)
+	db "则之@", TRAINERTYPE_NORMAL
+	db 12, CATERPIE
+	db 12, WEEDLE
+	db -1 ; end
+
+	; BUG_CATCHER (7)
+	db "友道@", TRAINERTYPE_NORMAL
+	db 13, PARAS
+	db -1 ; end
+
+	; BUG_CATCHER (8)
+	db "洋太@", TRAINERTYPE_NORMAL
+	db 15, VENONAT
+	db -1 ; end
+
+	; BUG_CATCHER (9)
+	db "武雄@", TRAINERTYPE_NORMAL
+	db 30, ARIADOS
+	db 32, PINSIR
+	db -1 ; end
+
+	; BUG_CATCHER (10)
+	db "光一@", TRAINERTYPE_NORMAL
+	db  9, METAPOD
+	db  9, METAPOD
+	db 10, KAKUNA
+	db  9, METAPOD
+	db -1 ; end
+
+	; BUG_CATCHER (11)
+	db "光一@", TRAINERTYPE_NORMAL
+	db 14, BUTTERFREE
+	db 14, BUTTERFREE
+	db 15, BEEDRILL
+	db 14, BUTTERFREE
+	db -1 ; end
+
+	; BUG_CATCHER (12)
+	db "志扬@", TRAINERTYPE_NORMAL
+	db 34, ARIADOS
+	db -1 ; end
+
+	; BUG_CATCHER (13)
+	db "洋太@", TRAINERTYPE_NORMAL
+	db 19, VENONAT
+	db -1 ; end
+
+	; BUG_CATCHER (14)
+	db "洋太@", TRAINERTYPE_MOVES
+	db 28, VENOMOTH,   DISABLE, SUPERSONIC, CONFUSION, LEECH_LIFE
+	db -1 ; end
+
+
+FisherGroup:
+	; FISHER (1)
+	db "勇志@", TRAINERTYPE_NORMAL
+	db  5, MAGIKARP
+	db  5, MAGIKARP
+	db 15, MAGIKARP
+	db  5, MAGIKARP
+	db -1 ; end
+
+	; FISHER (2)
+	db "泰明@", TRAINERTYPE_NORMAL
+	db 10, GOLDEEN
+	db -1 ; end
+
+	; FISHER (3)
+	db "哲治@", TRAINERTYPE_NORMAL
+	db 34, TENTACRUEL
+	db -1 ; end
+
+	; FISHER (4)
+	db "柏漳@", TRAINERTYPE_NORMAL
+	db 28, SEAKING
+	db 31, POLIWHIRL
+	db 31, SEAKING
+	db -1 ; end
+
+	; FISHER (5)
+	db "拓郎@", TRAINERTYPE_NORMAL
+	db  8, POLIWAG
+	db  8, POLIWAG
+	db -1 ; end
+
+	; FISHER (6)
+	db "义人@", TRAINERTYPE_NORMAL
+	db 10, MAGIKARP
+	db 10, GYARADOS
+	db 15, MAGIKARP
+	db 15, GYARADOS
+	db -1 ; end
+
+	; FISHER (7)
+	db "小实@", TRAINERTYPE_NORMAL
+	db 18, QWILFISH
+	db -1 ; end
+
+	; FISHER (8)
+	db "庄司@", TRAINERTYPE_NORMAL
+	db 27, GYARADOS
+	db -1 ; end
+
+	; FISHER (9)
+	db "圭藏@", TRAINERTYPE_NORMAL
+	db 22, MAGIKARP
+	db 22, MAGIKARP
+	db 22, MAGIKARP
+	db 22, MAGIKARP
+	db -1 ; end
+
+	; FISHER (10)
+	db "秀则@", TRAINERTYPE_NORMAL
+	db 23, GOLDEEN
+	db 23, GOLDEEN
+	db 25, SEAKING
+	db -1 ; end
+
+	; FISHER (11)
+	db "修平@", TRAINERTYPE_MOVES
+	db 25, REMORAID,   LOCK_ON, PSYBEAM, AURORA_BEAM, BUBBLEBEAM
+	db 25, REMORAID,   LOCK_ON, PSYBEAM, AURORA_BEAM, BUBBLEBEAM
+	db -1 ; end
+
+	; FISHER (12)
+	db "大辅@", TRAINERTYPE_NORMAL
+	db 25, SHELLDER
+	db 29, OCTILLERY
+	db 25, REMORAID
+	db 29, CLOYSTER
+	db -1 ; end
+
+	; FISHER (13)
+	db "沧泓@", TRAINERTYPE_NORMAL
+	db 32, REMORAID
+	db 32, REMORAID
+	db -1 ; end
+
+	; FISHER (14)
+	db "洪钧@", TRAINERTYPE_NORMAL
+	db 25, MAGIKARP
+	db 25, MAGIKARP
+	db 31, QWILFISH
+	db 31, TENTACRUEL
+	db -1 ; end
+
+	; FISHER (15)
+	db "英一@", TRAINERTYPE_NORMAL
+	db 30, GYARADOS
+	db 30, GYARADOS
+	db 30, GYARADOS
+	db -1 ; end
+
+	; FISHER (16)
+	db "泰明@", TRAINERTYPE_NORMAL
+	db 17, GOLDEEN
+	db -1 ; end
+
+	; FISHER (17)
+	db "泰明@", TRAINERTYPE_NORMAL
+	db 17, QWILFISH
+	db 19, GOLDEEN
+	db -1 ; end
+
+	; FISHER (18)
+	db "小实@", TRAINERTYPE_NORMAL
+	db 23, QWILFISH
+	db -1 ; end
+
+	; FISHER (19)
+	db "小实@", TRAINERTYPE_NORMAL
+	db 32, GOLDEEN
+	db 32, GOLDEEN
+	db 34, QWILFISH
+	db -1 ; end
+
+	; FISHER (20)
+	db "秀则@", TRAINERTYPE_NORMAL
+	db 29, GOLDEEN
+	db 29, GOLDEEN
+	db 32, SEAKING
+	db -1 ; end
+
+	; FISHER (21)
+	db "隆义@", TRAINERTYPE_NORMAL
+	db 30, QWILFISH
+	db 30, QWILFISH
+	db 34, SEAKING
+	db -1 ; end
+
+	; FISHER (22)
+	db "秀则@", TRAINERTYPE_NORMAL
+	db 31, GOLDEEN
+	db 35, SEAKING
+	db 35, SEAKING
+	db -1 ; end
+
+
+SwimmerMGroup:
+	; SWIMMERM (1)
+	db "润中@", TRAINERTYPE_NORMAL
+	db 32, REMORAID
+	db 30, SEADRA
+	db -1 ; end
+
+	; SWIMMERM (2)
+	db "伸夫@", TRAINERTYPE_NORMAL
+	db 20, TENTACOOL
+	db 20, TENTACOOL
+	db -1 ; end
+
+	; SWIMMERM (3)
+	db "尚行@", TRAINERTYPE_NORMAL
+	db 18, SHELLDER
+	db 20, WARTORTLE
+	db 18, SHELLDER
+	db -1 ; end
+
+	; SWIMMERM (4)
+	db "达也@", TRAINERTYPE_NORMAL
+	db 21, SHELLDER
+	db 19, TENTACOOL
+	db 19, TENTACRUEL
+	db -1 ; end
+
+	; SWIMMERM (5)
+	db "宗雄@", TRAINERTYPE_NORMAL
+	db 16, TENTACOOL
+	db 17, TENTACOOL
+	db 16, TENTACOOL
+	db 19, STARYU
+	db 17, TENTACOOL
+	db 19, REMORAID
+	db -1 ; end
+
+	; SWIMMERM (6)
+	db "洋平@", TRAINERTYPE_NORMAL
+	db 23, QWILFISH
+	db -1 ; end
+
+	; SWIMMERM (7)
+	db "诚儿@", TRAINERTYPE_NORMAL
+	db 20, GYARADOS
+	db 20, GYARADOS
+	db -1 ; end
+
+	; SWIMMERM (8)
+	db "茂树@", TRAINERTYPE_NORMAL
+	db 23, KRABBY
+	db -1 ; end
+
+	; SWIMMERM (9)
+	db "卡比@", TRAINERTYPE_NORMAL
+	db 24, SEEL
+	db 25, DEWGONG
+	db 24, SEEL
+	db -1 ; end
+
+	; SWIMMERM (10)
+	db "典弘@", TRAINERTYPE_NORMAL
+	db 26, PILOSWINE
+	db 26, PILOSWINE
+	db -1 ; end
+
+	; SWIMMERM (11)
+	db "秀典@", TRAINERTYPE_NORMAL
+	db 24, SHELLDER
+	db 25, CLOYSTER
+	db 24, SHELLDER
+	db -1 ; end
+
+	; SWIMMERM (12)
+	db "海人@", TRAINERTYPE_NORMAL
+	db 15, HORSEA
+	db 15, HORSEA
+	db 20, SEADRA
+	db -1 ; end
+
+	; SWIMMERM (13)
+	db "青石　@", TRAINERTYPE_NORMAL
+	db 13, STARYU
+	db 18, STARMIE
+	db 16, HORSEA
+	db -1 ; end
+
+	; SWIMMERM (14)
+	db "进源@", TRAINERTYPE_NORMAL
+	db 26, SEADRA
+	db 28, TENTACOOL
+	db 30, TENTACRUEL
+	db 28, GOLDEEN
+	db -1 ; end
+
+	; SWIMMERM (15)
+	db "浩德@", TRAINERTYPE_NORMAL
+	db 30, SHELLDER
+	db 34, CLOYSTER
+	db -1 ; end
+
+	; SWIMMERM (16)
+	db "小星@", TRAINERTYPE_NORMAL
+	db 13, STARYU
+	db 18, STARMIE
+	db 16, HORSEA
+	db -1 ; end
+
+	; SWIMMERM (17)
+	db "胜渊@", TRAINERTYPE_NORMAL
+	db 34, MARILL
+	db -1 ; end
+
+	; SWIMMERM (18)
+	db "源庆@", TRAINERTYPE_NORMAL
+	db 29, QUAGSIRE
+	db 29, OCTILLERY
+	db 32, QUAGSIRE
+	db -1 ; end
+
+	; SWIMMERM (19)
+	db "加库@", TRAINERTYPE_NORMAL
+	db 13, STARYU
+	db 18, STARMIE
+	db 16, HORSEA
+	db -1 ; end
+
+	; SWIMMERM (20)
+	db "雷斯@", TRAINERTYPE_NORMAL
+	db 13, STARYU
+	db 18, STARMIE
+	db 16, HORSEA
+	db -1 ; end
+
+	; SWIMMERM (21)
+	db "洪辉@", TRAINERTYPE_NORMAL
+	db 32, HORSEA
+	db 32, HORSEA
+	db 35, SEADRA
+	db -1 ; end
+
+
+SwimmerFGroup:
+	; SWIMMERF (1)
+	db "梨纱@", TRAINERTYPE_NORMAL
+	db 21, STARYU
+	db -1 ; end
+
+	; SWIMMERF (2)
+	db "美智@", TRAINERTYPE_NORMAL
+	db 19, STARYU
+	db 19, SHELLDER
+	db -1 ; end
+
+	; SWIMMERF (3)
+	db "小渚@", TRAINERTYPE_NORMAL
+	db 18, GOLDEEN
+	db 20, GOLDEEN
+	db 20, SEAKING
+	db -1 ; end
+
+	; SWIMMERF (4)
+	db "夏美@", TRAINERTYPE_MOVES
+	db 20, PSYDUCK,    SCRATCH, TAIL_WHIP, DISABLE, CONFUSION
+	db 22, GOLDEEN,    PECK, TAIL_WHIP, SUPERSONIC, HORN_ATTACK
+	db -1 ; end
+
+	; SWIMMERF (5)
+	db "香苗@", TRAINERTYPE_NORMAL
+	db 22, SEEL
+	db -1 ; end
+
+	; SWIMMERF (6)
+	db "诗帆@", TRAINERTYPE_NORMAL
+	db 20, STARYU
+	db 20, STARMIE
+	db -1 ; end
+
+	; SWIMMERF (7)
+	db "洋子@", TRAINERTYPE_MOVES
+	db 21, HORSEA,     BUBBLE, SMOKESCREEN, LEER, WATER_GUN
+	db 21, HORSEA,     DRAGON_RAGE, SMOKESCREEN, LEER, WATER_GUN
+	db -1 ; end
+
+	; SWIMMERF (8)
+	db "幸子@", TRAINERTYPE_NORMAL
+	db 28, JYNX
+	db -1 ; end
+
+	; SWIMMERF (9)
+	db "亚由美@", TRAINERTYPE_NORMAL
+	db 28, DEWGONG
+	db -1 ; end
+
+	; SWIMMERF (10)
+	db "步美@", TRAINERTYPE_NORMAL
+	db 20, SEAKING
+	db -1 ; end
+
+	; SWIMMERF (11)
+	db "胜得@", TRAINERTYPE_NORMAL
+	db 33, DEWGONG
+	db -1 ; end
+
+	; SWIMMERF (12)
+	db "美子@", TRAINERTYPE_NORMAL
+	db 34, SEAKING
+	db -1 ; end
+
+	; SWIMMERF (13)
+	db "夏子@", TRAINERTYPE_NORMAL
+	db 20, SEAKING
+	db -1 ; end
+
+	; SWIMMERF (14)
+	db "郁洁@", TRAINERTYPE_NORMAL
+	db 29, MARILL
+	db 29, MARILL
+	db 32, LAPRAS
+	db -1 ; end
+
+	; SWIMMERF (15)
+	db "罗里@", TRAINERTYPE_NORMAL
+	db 32, STARMIE
+	db 32, STARMIE
+	db -1 ; end
+
+	; SWIMMERF (16)
+	db "理沙@", TRAINERTYPE_NORMAL
+	db 20, SEAKING
+	db -1 ; end
+
+	; SWIMMERF (17)
+	db "汐晨@", TRAINERTYPE_NORMAL
+	db 28, SEEL
+	db 28, SEEL
+	db 28, SEEL
+	db 28, DEWGONG
+	db -1 ; end
+
+	; SWIMMERF (18)
+	db "娜美@", TRAINERTYPE_NORMAL
+	db 37, GOLDUCK
+	db -1 ; end
+
+	; SWIMMERF (19)
+	db "汤雁@", TRAINERTYPE_NORMAL
+	db 35, SEAKING
+	db 35, SEAKING
+	db -1 ; end
+
+
+SailorGroup:
+	; SAILOR (1)
+	db "光雄@", TRAINERTYPE_NORMAL
+	db 17, POLIWHIRL
+	db 17, RATICATE
+	db 19, KRABBY
+	db -1 ; end
+
+	; SAILOR (2)
+	db "干劲@", TRAINERTYPE_NORMAL
+	db 18, POLIWAG
+	db 18, POLIWHIRL
+	db -1 ; end
+
+	; SAILOR (3)
+	db "次郎@", TRAINERTYPE_NORMAL
+	db 20, POLIWHIRL
+	db -1 ; end
+
+	; SAILOR (4)
+	db "勇藏@", TRAINERTYPE_MOVES
+	db 18, KRABBY,     BUBBLE, LEER, VICEGRIP, HARDEN
+	db 20, KRABBY,     BUBBLEBEAM, LEER, VICEGRIP, HARDEN
+	db -1 ; end
+
+	; SAILOR (5)
+	db "行政@", TRAINERTYPE_NORMAL
+	db 18, MACHOP
+	db 18, MACHOP
+	db 18, POLIWHIRL
+	db -1 ; end
+
+	; SAILOR (6)
+	db "克雄@", TRAINERTYPE_NORMAL
+	db 32, RATICATE
+	db 32, RATICATE
+	db -1 ; end
+
+	; SAILOR (7)
+	db "光流@", TRAINERTYPE_NORMAL
+	db 34, KINGLER
+	db -1 ; end
+
+	; SAILOR (8)
+	db "浩平@", TRAINERTYPE_NORMAL
+	db 28, MACHOP
+	db 28, MACHOP
+	db 28, POLIWRATH
+	db 28, MACHOP
+	db -1 ; end
+
+	; SAILOR (9)
+	db "滋郎@", TRAINERTYPE_NORMAL
+	db 31, MACHOP
+	db 33, MACHOKE
+	db 26, PSYDUCK
+	db -1 ; end
+
+	; SAILOR (10)
+	db "正洋@", TRAINERTYPE_NORMAL
+	db 19, WOOPER
+	db -1 ; end
+
+	; SAILOR (11)
+	db "干劲@", TRAINERTYPE_NORMAL
+	db 28, POLIWHIRL
+	db 28, POLIWHIRL
+	db -1 ; end
+
+	; SAILOR (12)
+	db "干劲@", TRAINERTYPE_NORMAL
+	db 34, POLIWHIRL
+	db 34, POLIWRATH
+	db -1 ; end
+
+
+	chs_at SuperNerdGroup
+	; SUPER_NERD (1)
+	db "旨大@", TRAINERTYPE_NORMAL
+	db 20, GRIMER
+	db -1 ; end
+
+	; SUPER_NERD (2)
+	db "数人@", TRAINERTYPE_NORMAL
+	db 11, GRIMER
+	db 11, GRIMER
+	db -1 ; end
+
+	; SUPER_NERD (3)
+	db "喝党@", TRAINERTYPE_NORMAL
+	db 20, MAGNEMITE
+	db 20, MAGNEMITE
+	db 20, MAGNEMITE
+	db -1 ; end
+
+	; SUPER_NERD (4)
+	db "娴牙@", TRAINERTYPE_NORMAL
+	db 22, KOFFING
+	db 22, KOFFING
+	db -1 ; end
+
+	; SUPER_NERD (5)
+	db "信弘@", TRAINERTYPE_NORMAL
+	db 24, DITTO
+	db -1 ; end
+
+	; SUPER_NERD (6)
+	db "尚恒@", TRAINERTYPE_NORMAL
+	db 34, GRIMER
+	db 34, MUK
+	db -1 ; end
+
+	; SUPER_NERD (7)
+	db "巧@", TRAINERTYPE_NORMAL
+	db 32, MAGNEMITE
+	db 32, MAGNEMITE
+	db 32, MAGNEMITE
+	db -1 ; end
+
+	; SUPER_NERD (8)
+	db "轩造@", TRAINERTYPE_NORMAL
+	db 36, PORYGON
+	db -1 ; end
+
+	; SUPER_NERD (9)
+	db "纯生@", TRAINERTYPE_NORMAL
+	db 31, MAGNEMITE
+	db 33, MUK
+	db 31, MAGNEMITE
+	db -1 ; end
+
+	; SUPER_NERD (10)
+	db "辉纪@", TRAINERTYPE_NORMAL
+	db  7, MAGNEMITE
+	db 11, VOLTORB
+	db  7, MAGNEMITE
+	db  9, MAGNEMITE
+	db -1 ; end
+
+	; SUPER_NERD (11)
+	db "兼生@", TRAINERTYPE_NORMAL
+	db 27, MAGNEMITE
+	db 27, MAGNEMITE
+	db 27, MAGNEMITE
+	db -1 ; end
+
+	; SUPER_NERD (12)
+; The CHS patch bug: the name overwrites its "@" and the trainer type (TRAINERTYPE_MOVES),
+; so the game reads this trainer's name and party data wrongly.
+	db "太郎　"
+
+	chs_at GuitaristGroup
+	; GUITARIST (1)
+	db "响平@", TRAINERTYPE_NORMAL
+	db 34, ELECTABUZZ
+	db -1 ; end
+
+	; GUITARIST (2)
+	db "骏逸@", TRAINERTYPE_NORMAL
+	db 27, MAGNEMITE
+	db 33, VOLTORB
+	db 32, MAGNEMITE
+	db 32, MAGNEMITE
+	db -1 ; end
+
+
+HikerGroup:
+	; HIKER (1)
+	db "勤快@", TRAINERTYPE_NORMAL
+	db 16, GEODUDE
+	db 18, MACHAMP
+	db -1 ; end
+
+	; HIKER (2)
+	db "太介@", TRAINERTYPE_NORMAL
+	db  4, GEODUDE
+	db  6, GEODUDE
+	db  8, GEODUDE
+	db -1 ; end
+
+	; HIKER (3)
+	db "研吾@", TRAINERTYPE_NORMAL
+	db 23, GEODUDE
+	db 23, GEODUDE
+	db 23, GRAVELER
+	db -1 ; end
+
+	; HIKER (4)
+	db "政文@", TRAINERTYPE_NORMAL
+	db 23, GEODUDE
+	db 25, MACHOP
+	db -1 ; end
+
+	; HIKER (5)
+	db "勤快@", TRAINERTYPE_NORMAL
+	db 11, GEODUDE
+	db 11, MACHOP
+	db -1 ; end
+
+	; HIKER (6)
+	db "铁二@", TRAINERTYPE_NORMAL
+	db 14, DIGLETT
+	db 14, GEODUDE
+	db 16, DUGTRIO
+	db -1 ; end
+
+	; HIKER (7)
+	db "克洋@", TRAINERTYPE_NORMAL
+	db 24, MACHOP
+	db 27, GRAVELER
+	db 27, MACHOP
+	db -1 ; end
+
+	; HIKER (8)
+	db "昭雄@", TRAINERTYPE_NORMAL
+	db 25, GEODUDE
+	db 25, GRAVELER
+	db 25, GOLEM
+	db -1 ; end
+
+	; HIKER (9)
+	db "太郎@", TRAINERTYPE_NORMAL
+	db 34, ONIX
+	db -1 ; end
+
+	; HIKER (10)
+	db "雅彦@", TRAINERTYPE_MOVES
+	db 27, DIGLETT,    MAGNITUDE, DIG, SAND_ATTACK, SLASH
+	db 27, DUGTRIO,    MAGNITUDE, DIG, SAND_ATTACK, SLASH
+	db -1 ; end
+
+	; HIKER (11)
+	db "修司@", TRAINERTYPE_NORMAL
+	db 13, GEODUDE
+	db 13, GEODUDE
+	db 13, GEODUDE
+	db 13, GEODUDE
+	db 13, GEODUDE
+	db -1 ; end
+
+	; HIKER (12)
+	db "勤快@", TRAINERTYPE_NORMAL
+	db 25, GRAVELER
+	db 27, GRAVELER
+	db 29, MACHOKE
+	db -1 ; end
+
+	; HIKER (13)
+	db "峥涛@", TRAINERTYPE_NORMAL
+	db 31, GRAVELER
+	db 31, GRAVELER
+	db 31, GRAVELER
+	db -1 ; end
+
+	; HIKER (14)
+	db "浩一@", TRAINERTYPE_NORMAL
+	db 31, SANDSLASH
+	db 33, GOLEM
+	db -1 ; end
+
+	; HIKER (15)
+	db "崇哲@", TRAINERTYPE_NORMAL
+	db 34, DUGTRIO
+	db 32, ONIX
+	db -1 ; end
+
+	; HIKER (16)
+	db "汉嵘@", TRAINERTYPE_NORMAL
+	db 27, SANDSLASH
+	db 29, GRAVELER
+	db 31, GOLEM
+	db 29, GRAVELER
+	db -1 ; end
+
+	; HIKER (17)
+	db "岩生@", TRAINERTYPE_NORMAL
+	db 35, MACHAMP
+	db -1 ; end
+
+	; HIKER (18)
+	db "勇吾@", TRAINERTYPE_NORMAL
+	db 11, ONIX
+	db -1 ; end
+
+	; HIKER (19)
+	db "太郎@", TRAINERTYPE_NORMAL
+	db 38, ONIX
+	db -1 ; end
+
+	; HIKER (20)
+	db "太郎@", TRAINERTYPE_NORMAL
+	db 29, ONIX
+	db -1 ; end
+
+
+BikerGroup:
+	; BIKER (1)
+	db "贞夫@", TRAINERTYPE_NORMAL
+	db 20, KOFFING
+	db 20, KOFFING
+	db 20, KOFFING
+	db -1 ; end
+
+	; BIKER (2)
+	db "阿数@", TRAINERTYPE_NORMAL
+	db 20, KOFFING
+	db 20, KOFFING
+	db 20, KOFFING
+	db -1 ; end
+
+	; BIKER (3)
+	db "启豪@", TRAINERTYPE_NORMAL
+	db 27, KOFFING
+	db 28, KOFFING
+	db 29, KOFFING
+	db 30, KOFFING
+	db -1 ; end
+
+	; BIKER (4)
+	db "犹明@", TRAINERTYPE_NORMAL
+	db 34, FLAREON
+	db -1 ; end
+
+	; BIKER (5)
+	db "自强@", TRAINERTYPE_NORMAL
+	db 32, KOFFING
+	db 32, KOFFING
+	db -1 ; end
+
+	; BIKER (6)
+	db "铁@", TRAINERTYPE_NORMAL
+	db 30, KOFFING
+	db 30, CHARMELEON
+	db 30, WEEZING
+	db -1 ; end
+
+	; BIKER (7)
+	db "史龙@", TRAINERTYPE_NORMAL
+	db 34, WEEZING
+	db -1 ; end
+
+	; BIKER (8)
+	db "执彰@", TRAINERTYPE_NORMAL
+	db 32, MAGMAR
+	db 32, MAGMAR
+	db -1 ; end
+
+	; BIKER (9)
+	db "兴添@", TRAINERTYPE_NORMAL
+	db 28, KOFFING
+	db 30, MAGMAR
+	db 32, WEEZING
+	db -1 ; end
+
+
+BlaineGroup:
+	; BLAINE (1)
+	db "夏伯@", TRAINERTYPE_MOVES
+	db 45, MAGCARGO,   CURSE, SMOG, FLAMETHROWER, ROCK_SLIDE
+	db 45, MAGMAR,     THUNDERPUNCH, FIRE_PUNCH, SUNNY_DAY, CONFUSE_RAY
+	db 50, RAPIDASH,   QUICK_ATTACK, FIRE_SPIN, FURY_ATTACK, FIRE_BLAST
+	db -1 ; end
+
+
+BurglarGroup:
+	; BURGLAR (1)
+	db "保治@", TRAINERTYPE_NORMAL
+	db 23, KOFFING
+	db 25, MAGMAR
+	db 23, KOFFING
+	db -1 ; end
+
+	; BURGLAR (2)
+	db "五蔵@", TRAINERTYPE_MOVES
+	db 26, GROWLITHE,  ROAR, EMBER, LEER, TAKE_DOWN
+	db 24, KOFFING,    TACKLE, SMOG, SLUDGE, SMOKESCREEN
+	db -1 ; end
+
+	; BURGLAR (3)
+	db "阿毅@", TRAINERTYPE_NORMAL
+	db 25, KOFFING
+	db 28, MAGMAR
+	db 25, KOFFING
+	db 30, KOFFING
+	db -1 ; end
+
+
+FirebreatherGroup:
+	; FIREBREATHER (1)
+	db "秋仁@", TRAINERTYPE_NORMAL
+	db 29, MAGMAR
+	db 32, WEEZING
+	db 29, MAGMAR
+	db -1 ; end
+
+	; FIREBREATHER (2)
+	db "昌勋@", TRAINERTYPE_NORMAL
+	db 17, CHARMELEON
+	db -1 ; end
+
+	; FIREBREATHER (3)
+	db "俊阳@", TRAINERTYPE_NORMAL
+	db 15, KOFFING
+	db 16, GROWLITHE
+	db 15, KOFFING
+	db -1 ; end
+
+	; FIREBREATHER (4)
+	db "明炘@", TRAINERTYPE_NORMAL
+	db 32, KOFFING
+	db 32, SLUGMA
+	db -1 ; end
+
+	; FIREBREATHER (5)
+	db "福尾@", TRAINERTYPE_NORMAL
+	db  6, KOFFING
+	db  6, KOFFING
+	db -1 ; end
+
+	; FIREBREATHER (6)
+	db "纪阳@", TRAINERTYPE_NORMAL
+	db 11, MAGMAR
+	db 13, MAGMAR
+	db -1 ; end
+
+	; FIREBREATHER (7)
+	db "纪保@", TRAINERTYPE_NORMAL
+	db  9, VULPIX
+	db -1 ; end
+
+	; FIREBREATHER (8)
+	db "小戴@", TRAINERTYPE_NORMAL
+	db 28, KOFFING
+	db 31, FLAREON
+	db 28, KOFFING
+	db -1 ; end
+
+
+JugglerGroup:
+	; JUGGLER (1)
+	db "麦克　@", TRAINERTYPE_NORMAL
+	db  2, VOLTORB
+	db  6, VOLTORB
+	db 10, VOLTORB
+	db 14, VOLTORB
+	db -1 ; end
+
+	; JUGGLER (2)
+	db "约@", TRAINERTYPE_NORMAL
+	db 29, MR__MIME
+	db 29, MAGMAR
+	db 29, MACHOKE
+	db -1 ; end
+
+	; JUGGLER (3)
+	db "乔那森@", TRAINERTYPE_NORMAL
+	db 33, ELECTRODE
+	db 33, ELECTRODE
+	db 33, ELECTRODE
+	db 33, ELECTRODE
+	db -1 ; end
+
+	; JUGGLER (4)
+	db "麦克　@", TRAINERTYPE_NORMAL
+	db  6, VOLTORB
+	db 10, VOLTORB
+	db 14, VOLTORB
+	db 18, VOLTORB
+	db -1 ; end
+
+	; JUGGLER (5)
+	db "麦克　@", TRAINERTYPE_NORMAL
+	db 18, VOLTORB
+	db 22, VOLTORB
+	db 26, VOLTORB
+	db 30, ELECTRODE
+	db -1 ; end
+
+
+BlackbeltGroup:
+	; BLACKBELT_T (1)
+	db "武则@", TRAINERTYPE_NORMAL
+	db 27, ONIX
+	db 30, HITMONLEE
+	db 27, ONIX
+	db 32, MACHOKE
+	db -1 ; end
+
+	; BLACKBELT_T (2)
+	db "清正@", TRAINERTYPE_MOVES
+	db 27, HITMONLEE,  DOUBLE_KICK, MEDITATE, JUMP_KICK, FOCUS_ENERGY
+	db -1 ; end
+
+	; BLACKBELT_T (3)
+	db "武则@", TRAINERTYPE_NORMAL
+	db 30, ONIX
+	db 37, MACHAMP
+	db 30, ONIX
+	db 35, HITMONLEE
+	db -1 ; end
+
+	; BLACKBELT_T (4)
+	db "文仁@", TRAINERTYPE_MOVES
+	db 27, HITMONCHAN, COMET_PUNCH, THUNDERPUNCH, ICE_PUNCH, FIRE_PUNCH
+	db -1 ; end
+
+	; BLACKBELT_T (5)
+	db "铁汉@", TRAINERTYPE_MOVES
+	db 25, MACHOP,     LEER, FOCUS_ENERGY, KARATE_CHOP, SEISMIC_TOSS
+	db 25, MACHOKE,    LEER, KARATE_CHOP, SEISMIC_TOSS, ROCK_SLIDE
+	db -1 ; end
+
+	; BLACKBELT_T (6)
+	db "信彦@", TRAINERTYPE_NORMAL
+	db 34, HITMONLEE
+	db 34, HITMONCHAN
+	db -1 ; end
+
+	; BLACKBELT_T (7)
+	db "守和@", TRAINERTYPE_NORMAL
+	db 23, MANKEY
+	db 23, MANKEY
+	db 25, PRIMEAPE
+	db -1 ; end
+
+	; BLACKBELT_T (8)
+	db "武则@", TRAINERTYPE_NORMAL
+	db 28, MACHOKE
+	db -1 ; end
+
+	; BLACKBELT_T (9)
+	db "裕泰@", TRAINERTYPE_NORMAL
+	db 30, MACHOKE
+	db 32, MACHOKE
+	db 34, MACHOKE
+	db -1 ; end
+
+
+ExecutiveMGroup:
+	; EXECUTIVEM (1)
+	db "干部@", TRAINERTYPE_MOVES
+	db 33, HOUNDOUR,   EMBER, ROAR, BITE, FAINT_ATTACK
+	db 33, KOFFING,    TACKLE, SLUDGE, SMOKESCREEN, HAZE
+	db 35, HOUNDOOM,   EMBER, SMOG, BITE, FAINT_ATTACK
+	db -1 ; end
+
+	; EXECUTIVEM (2)
+	db "干部@", TRAINERTYPE_MOVES
+	db 36, GOLBAT,     LEECH_LIFE, BITE, CONFUSE_RAY, WING_ATTACK
+	db -1 ; end
+
+	; EXECUTIVEM (3)
+	db "干部@", TRAINERTYPE_MOVES
+	db 30, KOFFING,    TACKLE, SELFDESTRUCT, SLUDGE, SMOKESCREEN
+	db 30, KOFFING,    TACKLE, SELFDESTRUCT, SLUDGE, SMOKESCREEN
+	db 30, KOFFING,    TACKLE, SELFDESTRUCT, SLUDGE, SMOKESCREEN
+	db 32, WEEZING,    TACKLE, EXPLOSION, SLUDGE, SMOKESCREEN
+	db 30, KOFFING,    TACKLE, SELFDESTRUCT, SLUDGE, SMOKESCREEN
+	db 30, KOFFING,    TACKLE, SMOG, SLUDGE, SMOKESCREEN
+	db -1 ; end
+
+	; EXECUTIVEM (4)
+	db "干部@", TRAINERTYPE_NORMAL
+	db 22, ZUBAT
+	db 24, RATICATE
+	db 22, KOFFING
+	db -1 ; end
+
+
+PsychicGroup:
+	; PSYCHIC_T (1)
+	db "阿助@", TRAINERTYPE_NORMAL
+	db 26, GIRAFARIG
+	db -1 ; end
+
+	; PSYCHIC_T (2)
+	db "鸿寻@", TRAINERTYPE_NORMAL
+	db 37, KADABRA
+	db -1 ; end
+
+	; PSYCHIC_T (3)
+	db "大卫　@", TRAINERTYPE_NORMAL
+	db 30, EXEGGCUTE
+	db 30, EXEGGCUTE
+	db 30, EXEGGUTOR
+	db -1 ; end
+
+	; PSYCHIC_T (4)
+	db "肖练@", TRAINERTYPE_NORMAL
+	db 34, XATU
+	db -1 ; end
+
+	; PSYCHIC_T (5)
+	db "辽@", TRAINERTYPE_MOVES
+	db 17, DROWZEE,    HYPNOSIS, DISABLE, DREAM_EATER, NO_MOVE
+	db -1 ; end
+
+	; PSYCHIC_T (6)
+	db "小界@", TRAINERTYPE_MOVES
+	db 17, SLOWPOKE,   TACKLE, GROWL, WATER_GUN, NO_MOVE
+	db 20, SLOWPOKE,   CURSE, BODY_SLAM, WATER_GUN, CONFUSION
+	db -1 ; end
+
+	; PSYCHIC_T (7)
+	db "空@", TRAINERTYPE_MOVES
+	db 13, ABRA,       TELEPORT, FLASH, NO_MOVE, NO_MOVE
+	db 13, ABRA,       TELEPORT, FLASH, NO_MOVE, NO_MOVE
+	db 15, KADABRA,    TELEPORT, KINESIS, CONFUSION, NO_MOVE
+	db -1 ; end
+
+	; PSYCHIC_T (8)
+	db "舜@", TRAINERTYPE_MOVES
+	db 24, NATU,       LEER, NIGHT_SHADE, FUTURE_SIGHT, CONFUSE_RAY
+	db 26, KADABRA,    DISABLE, PSYBEAM, RECOVER, FUTURE_SIGHT
+	db -1 ; end
+
+	; PSYCHIC_T (9)
+	db "真@", TRAINERTYPE_NORMAL
+	db 36, ESPEON
+	db -1 ; end
+
+	; PSYCHIC_T (10)
+	db "小肇@", TRAINERTYPE_NORMAL
+	db 30, STARMIE
+	db 30, EXEGGCUTE
+	db 34, GIRAFARIG
+	db -1 ; end
+
+	; PSYCHIC_T (11)
+	db "子巧@", TRAINERTYPE_NORMAL
+	db 32, MR__MIME
+	db 32, EXEGGCUTE
+	db 35, EXEGGCUTE
+	db -1 ; end
+
+	; PSYCHIC_T (12)
+	db "舜平@", TRAINERTYPE_NORMAL
+	db 29, DROWZEE
+	db 33, HYPNO
+	db -1 ; end
+
+
+PicnickerGroup:
+	; PICNICKER (1)
+	db "香织@", TRAINERTYPE_NORMAL
+	db  9, NIDORAN_F
+	db -1 ; end
+
+	; PICNICKER (2)
+	db "小瑞@", TRAINERTYPE_NORMAL
+	db  9, HOPPIP
+	db  9, HOPPIP
+	db 12, BULBASAUR
+	db -1 ; end
+
+	; PICNICKER (3)
+	db "育江@", TRAINERTYPE_MOVES
+	db 16, PIKACHU,    THUNDERSHOCK, GROWL, QUICK_ATTACK, DOUBLE_TEAM
+	db -1 ; end
+
+	; PICNICKER (4)
+	db "佳奈@", TRAINERTYPE_NORMAL
+	db 15, VULPIX
+	db -1 ; end
+
+	; PICNICKER (5)
+	db "晓慧@", TRAINERTYPE_NORMAL
+	db 36, NIDOQUEEN
+	db -1 ; end
+
+	; PICNICKER (6)
+	db "欣缘@", TRAINERTYPE_NORMAL
+	db 34, FLAAFFY
+	db -1 ; end
+
+	; PICNICKER (7)
+	db "旻娜@", TRAINERTYPE_NORMAL
+	db 31, FURRET
+	db 33, RAPIDASH
+	db -1 ; end
+
+	; PICNICKER (8)
+	db "真奈@", TRAINERTYPE_NORMAL
+	db 33, SEAKING
+	db -1 ; end
+
+	; PICNICKER (9)
+	db "小瑞@", TRAINERTYPE_NORMAL
+	db 14, HOPPIP
+	db 14, HOPPIP
+	db 17, IVYSAUR
+	db -1 ; end
+
+	; PICNICKER (10)
+	db "惠美@", TRAINERTYPE_NORMAL
+	db 16, PONYTA
+	db 16, PONYTA
+	db -1 ; end
+
+	; PICNICKER (11)
+	db "香织@", TRAINERTYPE_NORMAL
+	db 15, WEEPINBELL
+	db 15, NIDORINA
+	db -1 ; end
+
+	; PICNICKER (12)
+	db "香织@", TRAINERTYPE_NORMAL
+	db 19, WEEPINBELL
+	db 19, NIDORINO
+	db 21, NIDOQUEEN
+	db -1 ; end
+
+	; PICNICKER (13)
+	db "佳蕊@", TRAINERTYPE_NORMAL
+	db 32, SKIPLOOM
+	db 32, SKIPLOOM
+	db -1 ; end
+
+	; PICNICKER (14)
+	db "君慧@", TRAINERTYPE_NORMAL
+	db 30, NIDORINA
+	db 34, RAICHU
+	db -1 ; end
+
+	; PICNICKER (15)
+	db "小瑞@", TRAINERTYPE_NORMAL
+	db 26, SKIPLOOM
+	db 26, SKIPLOOM
+	db 29, IVYSAUR
+	db -1 ; end
+
+	; PICNICKER (16)
+	db "千慧@", TRAINERTYPE_MOVES
+	db 31, CLEFAIRY,   ENCORE, SING, DOUBLESLAP, MINIMIZE
+	db -1 ; end
+
+	; PICNICKER (17)
+	db "千慧@", TRAINERTYPE_MOVES
+	db 37, CLEFAIRY,   ENCORE, DOUBLESLAP, MINIMIZE, METRONOME
+	db -1 ; end
+
+	; PICNICKER (18)
+	db "惠美@", TRAINERTYPE_NORMAL
+	db 32, PONYTA
+	db 32, PONYTA
+	db -1 ; end
+
+	; PICNICKER (19)
+	db "蓁宜@", TRAINERTYPE_NORMAL
+	db 37, EXEGGUTOR
+	db -1 ; end
+
+	; PICNICKER (20)
+	db "千慧@", TRAINERTYPE_MOVES
+	db 20, CLEFAIRY,   ENCORE, SING, DOUBLESLAP, MINIMIZE
+	db -1 ; end
+
+	; PICNICKER (21)
+	db "惠美@", TRAINERTYPE_NORMAL
+	db 36, PONYTA
+	db 36, PONYTA
+	db -1 ; end
+
+
+CamperGroup:
+	; CAMPER (1)
+	db "高宏@", TRAINERTYPE_NORMAL
+	db  9, NIDORAN_M
+	db -1 ; end
+
+	; CAMPER (2)
+	db "洋一@", TRAINERTYPE_NORMAL
+	db 14, PSYDUCK
+	db -1 ; end
+
+	; CAMPER (3)
+	db "和也@", TRAINERTYPE_NORMAL
+	db 10, DIGLETT
+	db 10, ZUBAT
+	db 14, DIGLETT
+	db -1 ; end
+
+	; CAMPER (4)
+	db "明宏@", TRAINERTYPE_NORMAL
+	db 13, SANDSHREW
+	db 15, MARILL
+	db -1 ; end
+
+	; CAMPER (5)
+	db "雄一@", TRAINERTYPE_NORMAL
+	db 36, NIDOKING
+	db -1 ; end
+
+	; CAMPER (6)
+	db "立柏@", TRAINERTYPE_NORMAL
+	db 34, NIDOKING
+	db -1 ; end
+
+	; CAMPER (7)
+	db "雄铭@", TRAINERTYPE_NORMAL
+	db 33, GOLDUCK
+	db 31, SANDSLASH
+	db -1 ; end
+
+	; CAMPER (8)
+	db "良任@", TRAINERTYPE_NORMAL
+	db 32, DUGTRIO
+	db 29, PRIMEAPE
+	db 29, POLIWRATH
+	db -1 ; end
+
+	; CAMPER (9)
+	db "华一@", TRAINERTYPE_NORMAL
+	db 15, NIDORINO
+	db -1 ; end
+
+	; CAMPER (10)
+	db "华二@", TRAINERTYPE_NORMAL
+	db 15, NIDORINO
+	db -1 ; end
+
+	; CAMPER (11)
+	db "仓一@", TRAINERTYPE_NORMAL
+	db 17, MANKEY
+	db -1 ; end
+
+	; CAMPER (12)
+	db "洋一@", TRAINERTYPE_NORMAL
+	db 17, GEODUDE
+	db 17, GEODUDE
+	db 23, PSYDUCK
+	db -1 ; end
+
+	; CAMPER (13)
+	db "洋一@", TRAINERTYPE_NORMAL
+	db 23, GEODUDE
+	db 23, GEODUDE
+	db 26, PSYDUCK
+	db -1 ; end
+
+	; CAMPER (14)
+	db "考平@", TRAINERTYPE_NORMAL
+	db 33, GRAVELER
+	db 36, GRAVELER
+	db 40, GOLBAT
+	db 42, GOLDUCK
+	db -1 ; end
+
+	; CAMPER (15)
+	db "康政@", TRAINERTYPE_NORMAL
+	db 33, GRAVELER
+	db 36, GRAVELER
+	db 40, GOLBAT
+	db 42, GOLDUCK
+	db -1 ; end
+
+	; CAMPER (16)
+	db "肯一@", TRAINERTYPE_NORMAL
+	db 33, GRAVELER
+	db 36, GRAVELER
+	db 40, GOLBAT
+	db 42, GOLDUCK
+	db -1 ; end
+
+	; CAMPER (17)
+	db "阿虚@", TRAINERTYPE_NORMAL
+	db 33, GRAVELER
+	db 36, GRAVELER
+	db 40, GOLBAT
+	db 42, GOLDUCK
+	db -1 ; end
+
+	; CAMPER (18)
+	db "清志@", TRAINERTYPE_NORMAL
+	db 37, SANDSLASH
+	db -1 ; end
+
+	; CAMPER (19)
+	db "太一@", TRAINERTYPE_NORMAL
+	db 17, SANDSHREW
+	db 17, SANDSLASH
+	db 19, ZUBAT
+	db -1 ; end
+
+
+ExecutiveFGroup:
+	; EXECUTIVEF (1)
+	db "干部@", TRAINERTYPE_MOVES
+	db 32, ARBOK,      WRAP, POISON_STING, BITE, GLARE
+	db 32, VILEPLUME,  ABSORB, SWEET_SCENT, SLEEP_POWDER, ACID
+	db 32, MURKROW,    PECK, PURSUIT, HAZE, NIGHT_SHADE
+	db -1 ; end
+
+	; EXECUTIVEF (2)
+	db "干部@", TRAINERTYPE_MOVES
+	db 23, ARBOK,      WRAP, LEER, POISON_STING, BITE
+	db 23, GLOOM,      ABSORB, SWEET_SCENT, SLEEP_POWDER, ACID
+	db 25, MURKROW,    PECK, PURSUIT, HAZE, NO_MOVE
+	db -1 ; end
+
+
+SageGroup:
+	; SAGE (1)
+	db "莫念@", TRAINERTYPE_NORMAL
+	db  3, BELLSPROUT
+	db  3, BELLSPROUT
+	db  3, BELLSPROUT
+	db -1 ; end
+
+	; SAGE (2)
+	db "珍念@", TRAINERTYPE_NORMAL
+	db  3, BELLSPROUT
+	db  3, BELLSPROUT
+	db  3, BELLSPROUT
+	db -1 ; end
+
+	; SAGE (3)
+	db "宗念@", TRAINERTYPE_NORMAL
+	db  6, BELLSPROUT
+	db -1 ; end
+
+	; SAGE (4)
+	db "戒念@", TRAINERTYPE_NORMAL
+	db  7, BELLSPROUT
+	db  7, HOOTHOOT
+	db -1 ; end
+
+	; SAGE (5)
+	db "文翔@", TRAINERTYPE_NORMAL
+	db 22, HAUNTER
+	db -1 ; end
+
+	; SAGE (6)
+	db "治卫@", TRAINERTYPE_NORMAL
+	db 16, GASTLY
+	db 16, GASTLY
+	db 16, GASTLY
+	db 16, GASTLY
+	db 16, GASTLY
+	db -1 ; end
+
+	; SAGE (7)
+	db "永宗@", TRAINERTYPE_NORMAL
+	db  3, BELLSPROUT
+	db  3, BELLSPROUT
+	db  3, BELLSPROUT
+	db -1 ; end
+
+	; SAGE (8)
+	db "格念@", TRAINERTYPE_NORMAL
+	db  6, BELLSPROUT
+	db -1 ; end
+
+	; SAGE (9)
+	db "光圣@", TRAINERTYPE_NORMAL
+	db  7, BELLSPROUT
+	db  7, BELLSPROUT
+	db 10, HOOTHOOT
+	db -1 ; end
+
+
+MediumGroup:
+	; MEDIUM (1)
+	db "米子@", TRAINERTYPE_NORMAL
+	db 18, GASTLY
+	db 20, HAUNTER
+	db 20, GASTLY
+	db -1 ; end
+
+	; MEDIUM (2)
+	db "妙子@", TRAINERTYPE_NORMAL
+	db 20, HAUNTER
+	db 20, HAUNTER
+	db -1 ; end
+
+	; MEDIUM (3)
+	db "铃子@", TRAINERTYPE_NORMAL
+	db 25, HAUNTER
+	db -1 ; end
+
+	; MEDIUM (4)
+	db "米子@", TRAINERTYPE_NORMAL
+	db 25, HAUNTER
+	db -1 ; end
+
+	; MEDIUM (5)
+	db "梅子@", TRAINERTYPE_NORMAL
+	db 25, HAUNTER
+	db -1 ; end
+
+	; MEDIUM (6)
+	db "富嫣@", TRAINERTYPE_NORMAL
+	db 35, DROWZEE
+	db 35, HYPNO
+	db -1 ; end
+
+	; MEDIUM (7)
+	db "霓裳@", TRAINERTYPE_NORMAL
+	db 34, SLOWPOKE
+	db 36, SLOWBRO
+	db -1 ; end
+
+
+BoarderGroup:
+	; BOARDER (1)
+	db "文哉@", TRAINERTYPE_NORMAL
+	db 24, SEEL
+	db 25, DEWGONG
+	db 24, SEEL
+	db -1 ; end
+
+	; BOARDER (2)
+	db "典弘@", TRAINERTYPE_NORMAL
+	db 26, SWINUB
+	db 26, SWINUB
+	db -1 ; end
+
+	; BOARDER (3)
+	db "金次@", TRAINERTYPE_NORMAL
+	db 24, SHELLDER
+	db 25, CLOYSTER
+	db 24, SHELLDER
+	db -1 ; end
+
+
+PokefanMGroup:
+	; POKEFANM (1)
+	db "彰宏@", TRAINERTYPE_ITEM
+	db 14, RAICHU,     BERRY
+	db -1 ; end
+
+	; POKEFANM (2)
+	db "见晴@", TRAINERTYPE_ITEM
+	db 17, PIKACHU,    BERRY
+	db -1 ; end
+
+	; POKEFANM (3)
+	db "晖廉@", TRAINERTYPE_ITEM
+	db 33, QUAGSIRE,   BERRY
+	db -1 ; end
+
+	; POKEFANM (4)
+	db "一超@", TRAINERTYPE_ITEM
+	db 23, PIKACHU,    BERRY
+	db 23, PIKACHU,    BERRY
+	db 23, PIKACHU,    BERRY
+	db 23, PIKACHU,    BERRY
+	db 23, PIKACHU,    BERRY
+	db 23, PIKACHU,    BERRY
+	db -1 ; end
+
+	; POKEFANM (5)
+	db "世潮@", TRAINERTYPE_ITEM
+	db 29, BULBASAUR,  BERRY
+	db 29, CHARMANDER, BERRY
+	db 29, SQUIRTLE,   BERRY
+	db -1 ; end
+
+	; POKEFANM (6)
+	db "文雄@", TRAINERTYPE_ITEM
+	db 33, PSYDUCK,    BERRY
+	db -1 ; end
+
+	; POKEFANM (7)
+	db "耕作@", TRAINERTYPE_ITEM
+	db 13, SNUBBULL,   BERRY
+	db -1 ; end
+
+	; POKEFANM (8)
+	db "英明@", TRAINERTYPE_ITEM
+	db 28, MEOWTH,     BERRY
+	db 28, MEOWTH,     BERRY
+	db 28, MEOWTH,     BERRY
+	db -1 ; end
+
+	; POKEFANM (9)
+	db "小浩@", TRAINERTYPE_ITEM
+	db 32, DELIBIRD,   BERRY
+	db -1 ; end
+
+	; POKEFANM (10)
+	db "见晴@", TRAINERTYPE_ITEM
+	db 19, PIKACHU,    BERRY
+	db -1 ; end
+
+	; POKEFANM (11)
+	db "见晴@", TRAINERTYPE_ITEM
+	db 36, PIKACHU,    BERRY
+	db -1 ; end
+
+	; POKEFANM (12)
+	db "旺伟@", TRAINERTYPE_ITEM
+	db 29, NIDOKING,   BERRY
+	db 29, SLOWKING,   BERRY
+	db 58, MAGIKARP,   BERRY
+	db -1 ; end
+
+
+KimonoGirlGroup:
+	; KIMONO_GIRL (1)
+	db "京子@", TRAINERTYPE_NORMAL
+	db 20, SKIPLOOM
+	db 20, VULPIX
+	db 18, SKIPLOOM
+	db -1 ; end
+
+	; KIMONO_GIRL (2)
+	db "小梅@", TRAINERTYPE_NORMAL
+	db 17, FLAREON
+	db -1 ; end
+
+	; KIMONO_GIRL (3)
+	db "樱花@", TRAINERTYPE_NORMAL
+	db 17, ESPEON
+	db -1 ; end
+
+	; KIMONO_GIRL (4)
+	db "小玉@", TRAINERTYPE_NORMAL
+	db 17, UMBREON
+	db -1 ; end
+
+	; KIMONO_GIRL (5)
+	db "小桃@", TRAINERTYPE_NORMAL
+	db 17, VAPOREON
+	db -1 ; end
+
+	; KIMONO_GIRL (6)
+	db "小娟@", TRAINERTYPE_NORMAL
+	db 17, JOLTEON
+	db -1 ; end
+
+
+TwinsGroup:
+	; TWINS (1)
+	db "久美和留美@", TRAINERTYPE_NORMAL
+	db 10, SPINARAK
+	db 10, LEDYBA
+	db -1 ; end
+
+	; TWINS (2)
+	db "茉奈和佳奈@", TRAINERTYPE_MOVES
+	db 16, CLEFAIRY,   GROWL, ENCORE, DOUBLESLAP, METRONOME
+	db 16, JIGGLYPUFF, SING, DEFENSE_CURL, POUND, DISABLE
+	db -1 ; end
+
+	; TWINS (3)
+	db "茉奈和佳奈@", TRAINERTYPE_MOVES
+	db 16, JIGGLYPUFF, SING, DEFENSE_CURL, POUND, DISABLE
+	db 16, CLEFAIRY,   GROWL, ENCORE, DOUBLESLAP, METRONOME
+	db -1 ; end
+
+	; TWINS (4)
+	db "久美和留美@", TRAINERTYPE_NORMAL
+	db 10, LEDYBA
+	db 10, SPINARAK
+	db -1 ; end
+
+	; TWINS (5)
+	db "梅琪和梅珍@", TRAINERTYPE_NORMAL
+	db 35, VICTREEBEL
+	db 35, VILEPLUME
+	db -1 ; end
+
+	; TWINS (6)
+	db "梅琪和梅珍@", TRAINERTYPE_NORMAL
+	db 35, VILEPLUME
+	db 35, VICTREEBEL
+	db -1 ; end
+
+	; TWINS (7)
+	db "真子和实子@", TRAINERTYPE_NORMAL
+	db 31, TEDDIURSA
+	db 31, PHANPY
+	db -1 ; end
+
+	; TWINS (8)
+	db "真子和实子@", TRAINERTYPE_NORMAL
+	db 31, PHANPY
+	db 31, TEDDIURSA
+	db -1 ; end
+
+
+PokefanFGroup:
+	; POKEFANF (1)
+	db "小爱@", TRAINERTYPE_ITEM
+	db 14, SNUBBULL,   BERRY
+	db -1 ; end
+
+	; POKEFANF (2)
+	db "朋子@", TRAINERTYPE_ITEM
+	db 17, PIKACHU,    BERRY
+	db -1 ; end
+
+	; POKEFANF (3)
+	db "小爱@", TRAINERTYPE_ITEM
+	db 18, SNUBBULL,   BERRY
+	db -1 ; end
+
+	; POKEFANF (4)
+	db "小爱@", TRAINERTYPE_ITEM
+	db 30, GRANBULL,   BERRY
+	db -1 ; end
+
+	; POKEFANF (5)
+	db "贞子@", TRAINERTYPE_ITEM
+	db 23, SENTRET,    BERRY
+	db 23, SENTRET,    BERRY
+	db 23, SENTRET,    BERRY
+	db 28, FURRET,     BERRY
+	db 23, SENTRET,    BERRY
+	db -1 ; end
+
+
+RedGroup:
+	; RED (1)
+	db "赤红@", TRAINERTYPE_MOVES
+	db 81, PIKACHU,    CHARM, QUICK_ATTACK, THUNDERBOLT, THUNDER
+	db 73, ESPEON,     MUD_SLAP, REFLECT, SWIFT, PSYCHIC_M
+	db 75, SNORLAX,    AMNESIA, SNORE, REST, BODY_SLAM
+	db 77, VENUSAUR,   SUNNY_DAY, GIGA_DRAIN, SYNTHESIS, SOLARBEAM
+	db 77, CHARIZARD,  FLAMETHROWER, WING_ATTACK, SLASH, FIRE_SPIN
+	db 77, BLASTOISE,  RAIN_DANCE, SURF, BLIZZARD, WHIRLPOOL
+	db -1 ; end
+
+
+BlueGroup:
+	; BLUE (1)
+	db "青绿@", TRAINERTYPE_MOVES
+	db 56, PIDGEOT,    QUICK_ATTACK, WHIRLWIND, WING_ATTACK, MIRROR_MOVE
+	db 54, ALAKAZAM,   DISABLE, RECOVER, PSYCHIC_M, REFLECT
+	db 56, RHYDON,     FURY_ATTACK, SANDSTORM, ROCK_SLIDE, EARTHQUAKE
+	db 58, GYARADOS,   TWISTER, HYDRO_PUMP, RAIN_DANCE, HYPER_BEAM
+	db 58, EXEGGUTOR,  SUNNY_DAY, LEECH_SEED, EGG_BOMB, SOLARBEAM
+	db 58, ARCANINE,   ROAR, SWIFT, FLAMETHROWER, EXTREMESPEED
+	db -1 ; end
+
+
+OfficerGroup:
+	; OFFICER (1)
+	db "小守@", TRAINERTYPE_NORMAL
+	db 17, GROWLITHE
+	db -1 ; end
+
+	; OFFICER (2)
+	db "真一@", TRAINERTYPE_NORMAL
+	db 14, GROWLITHE
+	db 14, GROWLITHE
+	db -1 ; end
+
+
+GruntFGroup:
+	; GRUNTF (1)
+	db "手下　　@", TRAINERTYPE_NORMAL
+	db  9, ZUBAT
+	db 11, EKANS
+	db -1 ; end
+
+	; GRUNTF (2)
+	db "手下　　@", TRAINERTYPE_NORMAL
+	db 26, ARBOK
+	db -1 ; end
+
+	; GRUNTF (3)
+	db "手下　　@", TRAINERTYPE_NORMAL
+	db 25, GLOOM
+	db 25, GLOOM
+	db -1 ; end
+
+	; GRUNTF (4)
+	db "手下　　@", TRAINERTYPE_NORMAL
+	db 21, EKANS
+	db 23, ODDISH
+	db 21, EKANS
+	db 24, GLOOM
+	db -1 ; end
+
+	; GRUNTF (5)
+	db "手下　　@", TRAINERTYPE_MOVES
+	db 18, EKANS,      WRAP, LEER, POISON_STING, BITE
+	db 18, GLOOM,      ABSORB, SWEET_SCENT, STUN_SPORE, SLEEP_POWDER
+	db -1 ; end
+
+; Moved by the CHS patch into free space.
+	chs_free BrockGroup, $7560
+BrockGroup:
+	; BROCK (1)
+	db "小刚@", TRAINERTYPE_MOVES
+	db 41, GRAVELER,   DEFENSE_CURL, ROCK_SLIDE, ROLLOUT, EARTHQUAKE
+	db 41, RHYHORN,    FURY_ATTACK, SCARY_FACE, EARTHQUAKE, HORN_DRILL
+	db 42, OMASTAR,    BITE, SURF, PROTECT, SPIKE_CANNON
+	db 44, ONIX,       BIND, ROCK_SLIDE, BIDE, SANDSTORM
+	db 42, KABUTOPS,   SLASH, SURF, ENDURE, GIGA_DRAIN
+	db -1 ; end
+
+; The CHS patch also copied the original MistyGroup here, behind the moved BrockGroup.
+; This copy is not referenced (the game uses MistyGroup at its original address)
+; and still has the Korean name 이슬.
+	db $07, $9c, $06, $4d, "@", TRAINERTYPE_MOVES
+	db 42, GOLDUCK,    SURF, DISABLE, PSYCH_UP, PSYCHIC_M
+	db 42, QUAGSIRE,   SURF, AMNESIA, EARTHQUAKE, RAIN_DANCE
+	db 44, LAPRAS,     SURF, PERISH_SONG, BLIZZARD, RAIN_DANCE
+	db 47, STARMIE,    SURF, CONFUSE_RAY, RECOVER, ICE_BEAM
+	db -1 ; end

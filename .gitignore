@@ -32,3 +32,7 @@
 *.sn*
 *.sa*
 *.sg1
+
+# CHS: generated symbol includes; the patch's own LZ data is source, not output
+chs/build/
+!chs/gfx/**/*.chs.2bpp.lz

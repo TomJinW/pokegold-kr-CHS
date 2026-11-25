@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ master, CHS-classic ]
   pull_request:
 
 env:
@@ -36,13 +36,13 @@ jobs:
       - name: Compare
         if: ${{ github.repository_owner == 'Narishma-gb' }}
         run: |
-          make DEBUG=1 -j$(nproc) compare
+          make DEBUG=1 -j$(nproc) compare-original
           .github/checkdiff.sh
 
-      - name: Make
+      - name: Make and compare CHS
         if: ${{ github.repository_owner != 'Narishma-gb' }}
         run: |
-          make -j$(nproc)
+          make -j$(nproc) compare
           .github/checkdiff.sh
 
       - name: Checkout symbols
@@ -92,11 +92,11 @@ jobs:
       - name: Compare
         if: ${{ github.repository_owner == 'Narishma-gb' }}
         run: |
-          make DEBUG=1 -j$(sysctl -n hw.ncpu) compare
+          make DEBUG=1 -j$(sysctl -n hw.ncpu) compare-original
           .github/checkdiff.sh
 
-      - name: Make
+      - name: Make and compare CHS
         if: ${{ github.repository_owner != 'Narishma-gb' }}
         run: |
-          make -j$(sysctl -n hw.ncpu)
+          make -j$(sysctl -n hw.ncpu) compare
           .github/checkdiff.sh

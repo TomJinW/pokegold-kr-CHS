@@ -1,3 +1,25 @@
+# 韩版《宝可梦 金／银》简体中文
+
+本分支使用 master 原版 ROM 作为链接底图，构建与已发布的汉化版逐字节一致的 ROM。
+
+```sh
+make -j8          # v1.2.1：pokegold-krchs.gbc、pokesilver-krchs.gbc
+make chs-oldfont  # 同上，改用旧字库：pokegold-krchs-oldfont.gbc、pokesilver-krchs-oldfont.gbc
+make compare      # 构建并校验 v1.2.1
+make original     # 仅构建韩文原版 pokegold.gbc、pokesilver.gbc
+make compare-original
+```
+
+底图缺失时会从保留的原版源码自动构建；原版源码没有任何改动。
+正常构建不依赖 IPS、外部汉化工程或汉化 ROM。需要 RGBDS 1.0.4、Make、C 编译器和 Python 3。
+
+汉化源码位于 `chs/`，目录、文件名、标签和宏写法与原工程一致（如 `chs/maps/Route29.asm`、
+`chs/data/pokemon/names.asm`），每个条目用 `chs_at 原标签` 放在原地址；字库和图像使用 PNG。
+字库有新、旧两套，由汇编选项 `_CHS_OLDFONT` 选择。
+详见 [构建与源码说明](docs/chs.md)。
+
+---
+
 # Korean Pokémon Gold and Silver
 
 This is a WIP disassembly of 포켓몬스터 금·은.
